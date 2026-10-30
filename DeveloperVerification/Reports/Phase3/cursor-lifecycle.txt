@@ -1,0 +1,3 @@
+﻿playing: cursor visible = False
+paused: cursor visible = True
+resumed: cursor visible = False

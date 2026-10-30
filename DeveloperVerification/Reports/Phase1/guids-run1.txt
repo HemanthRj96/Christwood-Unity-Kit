@@ -1,0 +1,56 @@
+Assets/WorkshopKit/Content/Audio.meta:guid: 9df9f1434166bbd418f3cb4b28d6da8b
+Assets/WorkshopKit/Content/Audio/Blocked.wav.meta:guid: 2d83a52d76badd445b04f64ee7ba4a8d
+Assets/WorkshopKit/Content/Audio/Lose.wav.meta:guid: 088d15f1b321dc547911e8ac407d33aa
+Assets/WorkshopKit/Content/Audio/Pickup.wav.meta:guid: 105deefc4857c434bae22643fcb5adf0
+Assets/WorkshopKit/Content/Audio/Respawn.wav.meta:guid: d722eac46743de4429d3b832a1f68822
+Assets/WorkshopKit/Content/Audio/Win.wav.meta:guid: 79a6ae2867d96124489e8516c63a1fcc
+Assets/WorkshopKit/Content/Configuration.meta:guid: 0d133be05b03be54da2e03ee5c0d5e8c
+Assets/WorkshopKit/Content/Configuration/Movement Calm.asset.meta:guid: 8c24a05a813198840981fc84226af3fd
+Assets/WorkshopKit/Content/Configuration/Movement Speedy.asset.meta:guid: 90a73b4782661924eb1a6f75db2355eb
+Assets/WorkshopKit/Content/Configuration/Movement Standard.asset.meta:guid: 674908d148fdd594ca5990faedd16fea
+Assets/WorkshopKit/Content/Configuration/WorkshopCatalog.asset.meta:guid: ec3731d47b30fad4b8a6f803a9f55a49
+Assets/WorkshopKit/Content/Materials.meta:guid: cfe898298eca08443a07e9a88d11dd62
+Assets/WorkshopKit/Content/Materials/Boundary.mat.meta:guid: 1aac63b946738ca47aa83653ca203e53
+Assets/WorkshopKit/Content/Materials/Floor Dark.mat.meta:guid: 70440761e552d594fa6b4549e063544b
+Assets/WorkshopKit/Content/Materials/Floor Light.mat.meta:guid: addf0ced24bf0fa4e8d54f619c4d31f0
+Assets/WorkshopKit/Content/Materials/Gem.mat.meta:guid: 977eb29fa9ee33348a0546bc2d755aa8
+Assets/WorkshopKit/Content/Materials/Goal Locked.mat.meta:guid: b1578206309310b44a2c8fa57237488a
+Assets/WorkshopKit/Content/Materials/Goal Open.mat.meta:guid: 96478be53eab88945bea271aa4cd412f
+Assets/WorkshopKit/Content/Materials/Hazard Base.mat.meta:guid: 5e7a01f8aa542bc4faf1c35d57540bcc
+Assets/WorkshopKit/Content/Materials/Hazard Spike.mat.meta:guid: 4607826fc0a7a3d44ab351dc159703d0
+Assets/WorkshopKit/Content/Materials/Leaves.mat.meta:guid: b771deaae3e14c54fb47f30d42c93195
+Assets/WorkshopKit/Content/Materials/Player Body.mat.meta:guid: 28112eb330445b44e916742451573ef6
+Assets/WorkshopKit/Content/Materials/Player Visor.mat.meta:guid: b2fd3b6d4c06d62439ee24b3bf4aff2e
+Assets/WorkshopKit/Content/Materials/Start Pad.mat.meta:guid: 0643f836dfaf5044a83a74db70df62c8
+Assets/WorkshopKit/Content/Materials/Stone.mat.meta:guid: ab620b7e069416743a69467824e54ca4
+Assets/WorkshopKit/Content/Materials/Trunk.mat.meta:guid: a7a13e9e9b4a8d54ba79f2088c3248bc
+Assets/WorkshopKit/Content/Materials/Wall.mat.meta:guid: cc4998282cbd98c4b87ea6f2cfa9f4f9
+Assets/WorkshopKit/Content/Materials/Wood.mat.meta:guid: a54e54531613bf942a8e130f93f2404a
+Assets/WorkshopKit/Content/Prefabs.meta:guid: a8c565e9edb5eaa41a7cf7a838e01dbd
+Assets/WorkshopKit/Content/Prefabs/Decoration.meta:guid: 820d635a7e6cd7043949144f06764406
+Assets/WorkshopKit/Content/Prefabs/Decoration/Crate.prefab.meta:guid: cb07849bcded3c84d859a76c254788ef
+Assets/WorkshopKit/Content/Prefabs/Decoration/Rock.prefab.meta:guid: 73b62862ee4dd804793bc7cc2d6c7a8f
+Assets/WorkshopKit/Content/Prefabs/Decoration/Tree.prefab.meta:guid: 0803bf1ba0b520d489533e3a5ad79687
+Assets/WorkshopKit/Content/Prefabs/Environment.meta:guid: 3c0cb8fbfd73bc14ea60f398d0ad9ae4
+Assets/WorkshopKit/Content/Prefabs/Environment/Boundary Wall 4m.prefab.meta:guid: 62f6617bb1ab35b428543249cf5f18f9
+Assets/WorkshopKit/Content/Prefabs/Environment/Floor Tile Dark.prefab.meta:guid: ad62d0596f9a18b4c80bb529cddd437e
+Assets/WorkshopKit/Content/Prefabs/Environment/Floor Tile.prefab.meta:guid: 54108d59d61bbbd4282d31499db67987
+Assets/WorkshopKit/Content/Prefabs/Environment/Low Wall 2m.prefab.meta:guid: 522149982d5e1294c9629b1cdd224885
+Assets/WorkshopKit/Content/Prefabs/Environment/Low Wall 4m.prefab.meta:guid: c3c59d0b70b134f409c27b5fa0a75cc4
+Assets/WorkshopKit/Content/Prefabs/Gameplay.meta:guid: 676350147ebbe2349aa35b3291cd9fe4
+Assets/WorkshopKit/Content/Prefabs/Gameplay/Exit Goal.prefab.meta:guid: a698b3d71870d554a8d3112814687ef9
+Assets/WorkshopKit/Content/Prefabs/Gameplay/Gem.prefab.meta:guid: 7680649209bdb1942982c58d3bb1d82a
+Assets/WorkshopKit/Content/Prefabs/Gameplay/Spike Trap.prefab.meta:guid: 94455271060efb441a407f21f9c194a1
+Assets/WorkshopKit/Content/Prefabs/Gameplay/Start Point.prefab.meta:guid: ed937152d7aef7c4eb70549494aff652
+Assets/WorkshopKit/Content/Prefabs/System.meta:guid: 82ab40f534cca184589a017873dddc1a
+Assets/WorkshopKit/Content/Prefabs/System/Game Setup.prefab.meta:guid: 8a5f035c8dd366c4ba4bbd363e7a6a97
+Assets/WorkshopKit/Content/Prefabs/System/Top-Down Camera.prefab.meta:guid: b9919ec1008e0754f94fa5f0bbca0050
+Assets/WorkshopKit/Content/Prefabs/System/Top-Down Player.prefab.meta:guid: 52b988436611fab4a88998cd7b07524d
+Assets/WorkshopKit/Content/Prefabs/System/Workshop HUD.prefab.meta:guid: 34e1c57e0a7755948ac1287e80f2b251
+Assets/WorkshopKit/Content/Templates.meta:guid: 4fae5cdb56cf54f45bde1fbf27e83fce
+Assets/WorkshopKit/Content/Templates/TopDown.meta:guid: 5395d98491b7ef647a944cb8d5ced685
+Assets/WorkshopKit/Content/Templates/TopDown/Top-Down Preview.png.meta:guid: 446b3b8329f1596479aa30eb7c98606c
+Assets/WorkshopKit/Content/Templates/TopDown/Top-Down Template.asset.meta:guid: 77d98fea1297828428003d57a2ef4293
+Assets/WorkshopKit/Content/Templates/TopDown/TopDown_Starter.unity.meta:guid: d73cda72286cedf42b8408f916150f4d
+Assets/WorkshopKit/Content/UI.meta:guid: e50cb4dcfba6f1444869ca867f3ba91a
+Assets/WorkshopKit/Examples/TopDown_Example.unity.meta:guid: 3f8b46c4a52fee4469073614d8aeba40

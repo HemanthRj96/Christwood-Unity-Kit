@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fc5d4538a2abbe4485cc0a724664b8a, type: 3}
+  m_Name: Side-Scroller Template
+  m_EditorClassIdentifier: UnityWorkshop.Runtime::UnityWorkshop.GameTemplateDefinition
+  m_DisplayName: Side-Scroller
+  m_Perspective: 3
+  m_Description: Watch from the side and run left and right. Great for platform jumping
+    courses.
+  m_Controls: 'A/D or Left/Right: Move
+
+    Space: Jump'
+  m_Preview: {fileID: 2800000, guid: a37935d6affe60845a7782dd3e81b442, type: 3}
+  m_CanJump: 1
+  m_PlayerPrefab: {fileID: 3318441493865811751, guid: 3eea1ac4537452245a25a7a305e4d5a9, type: 3}
+  m_CameraRigPrefab: {fileID: 6350224184092264312, guid: f8797e93758c14f46ac0d3deacbd7a8e, type: 3}
+  m_MovementPresets:
+  - {fileID: 11400000, guid: 674908d148fdd594ca5990faedd16fea, type: 2}
+  - {fileID: 11400000, guid: 8c24a05a813198840981fc84226af3fd, type: 2}
+  - {fileID: 11400000, guid: 90a73b4782661924eb1a6f75db2355eb, type: 2}
+  m_StarterSceneGuid: 7f89d51366d6bc64b9552b932010a23a

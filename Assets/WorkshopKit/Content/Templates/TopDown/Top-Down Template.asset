@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fc5d4538a2abbe4485cc0a724664b8a, type: 3}
+  m_Name: Top-Down Template
+  m_EditorClassIdentifier: UnityWorkshop.Runtime::UnityWorkshop.GameTemplateDefinition
+  m_DisplayName: Top-Down
+  m_Perspective: 0
+  m_Description: Look down on your level from above. Great for mazes, collecting
+    and dodging. No jumping.
+  m_Controls: 'WASD or Arrow keys: Move'
+  m_Preview: {fileID: 2800000, guid: 446b3b8329f1596479aa30eb7c98606c, type: 3}
+  m_CanJump: 0
+  m_PlayerPrefab: {fileID: 3893436804891915358, guid: 52b988436611fab4a88998cd7b07524d, type: 3}
+  m_CameraRigPrefab: {fileID: 92373897362403201, guid: b9919ec1008e0754f94fa5f0bbca0050, type: 3}
+  m_MovementPresets:
+  - {fileID: 11400000, guid: 674908d148fdd594ca5990faedd16fea, type: 2}
+  - {fileID: 11400000, guid: 8c24a05a813198840981fc84226af3fd, type: 2}
+  - {fileID: 11400000, guid: 90a73b4782661924eb1a6f75db2355eb, type: 2}
+  m_StarterSceneGuid: d73cda72286cedf42b8408f916150f4d

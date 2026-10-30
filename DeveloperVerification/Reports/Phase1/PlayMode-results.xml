@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="7" result="Passed" total="7" passed="7" failed="0" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-10-30 04:46:31Z" end-time="2026-10-30 04:46:38Z" duration="7.2265211">
+  <test-suite type="TestSuite" id="1015" name="Christwood-Unity-Kit" fullname="Christwood-Unity-Kit" runstate="Runnable" testcasecount="7" result="Passed" start-time="2026-10-30 04:46:31Z" end-time="2026-10-30 04:46:38Z" duration="7.226521" total="7" passed="7" failed="0" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="PlayMode" />
+    </properties>
+    <test-suite type="Assembly" id="1012" name="UnityWorkshop.Tests.PlayMode.dll" fullname="C:/_My Stuff/Work/Unity/Christwood-Unity-Kit/Library/ScriptAssemblies/UnityWorkshop.Tests.PlayMode.dll" runstate="Runnable" testcasecount="7" result="Passed" start-time="2026-10-30 04:46:31Z" end-time="2026-10-30 04:46:38Z" duration="7.219508" total="7" passed="7" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="1316" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="PlayMode" />
+        <property name="EditorOnly" value="False" />
+      </properties>
+      <test-suite type="TestSuite" id="1013" name="UnityWorkshop" fullname="UnityWorkshop" runstate="Runnable" testcasecount="7" result="Passed" start-time="2026-10-30 04:46:31Z" end-time="2026-10-30 04:46:38Z" duration="7.218901" total="7" passed="7" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-suite type="TestSuite" id="1014" name="Tests" fullname="UnityWorkshop.Tests" runstate="Runnable" testcasecount="7" result="Passed" start-time="2026-10-30 04:46:31Z" end-time="2026-10-30 04:46:38Z" duration="7.218585" total="7" passed="7" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-suite type="TestFixture" id="1004" name="GameplayTests" fullname="UnityWorkshop.Tests.GameplayTests" classname="UnityWorkshop.Tests.GameplayTests" runstate="Runnable" testcasecount="7" result="Passed" start-time="2026-10-30 04:46:31Z" end-time="2026-10-30 04:46:38Z" duration="7.217504" total="7" passed="7" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1006" name="CollectAllThenExitWinsOnce" fullname="UnityWorkshop.Tests.GameplayTests.CollectAllThenExitWinsOnce" methodname="CollectAllThenExitWinsOnce" classname="UnityWorkshop.Tests.GameplayTests" runstate="Runnable" seed="540057332" result="Passed" start-time="2026-10-30 04:46:31Z" end-time="2026-10-30 04:46:33Z" duration="1.499104" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1007" name="HazardRespawnsAndKeepsProgress" fullname="UnityWorkshop.Tests.GameplayTests.HazardRespawnsAndKeepsProgress" methodname="HazardRespawnsAndKeepsProgress" classname="UnityWorkshop.Tests.GameplayTests" runstate="Runnable" seed="2043743755" result="Passed" start-time="2026-10-30 04:46:33Z" end-time="2026-10-30 04:46:35Z" duration="2.200672" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1011" name="MotorWalksOnFloorAndStopsAtWalls" fullname="UnityWorkshop.Tests.GameplayTests.MotorWalksOnFloorAndStopsAtWalls" methodname="MotorWalksOnFloorAndStopsAtWalls" classname="UnityWorkshop.Tests.GameplayTests" runstate="Runnable" seed="1709561526" result="Passed" start-time="2026-10-30 04:46:35Z" end-time="2026-10-30 04:46:35Z" duration="0.186154" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1008" name="PauseFreezesAndResumes" fullname="UnityWorkshop.Tests.GameplayTests.PauseFreezesAndResumes" methodname="PauseFreezesAndResumes" classname="UnityWorkshop.Tests.GameplayTests" runstate="Runnable" seed="1253417459" result="Passed" start-time="2026-10-30 04:46:35Z" end-time="2026-10-30 04:46:35Z" duration="0.240543" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1009" name="RestartRestoresEverythingTenTimes" fullname="UnityWorkshop.Tests.GameplayTests.RestartRestoresEverythingTenTimes" methodname="RestartRestoresEverythingTenTimes" classname="UnityWorkshop.Tests.GameplayTests" runstate="Runnable" seed="2084694477" result="Passed" start-time="2026-10-30 04:46:35Z" end-time="2026-10-30 04:46:38Z" duration="2.438760" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1010" name="StarterSceneIsWinnable" fullname="UnityWorkshop.Tests.GameplayTests.StarterSceneIsWinnable" methodname="StarterSceneIsWinnable" classname="UnityWorkshop.Tests.GameplayTests" runstate="Runnable" seed="1067544161" result="Passed" start-time="2026-10-30 04:46:38Z" end-time="2026-10-30 04:46:38Z" duration="0.463323" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1005" name="StartsAtStartPointAndPlaying" fullname="UnityWorkshop.Tests.GameplayTests.StartsAtStartPointAndPlaying" methodname="StartsAtStartPointAndPlaying" classname="UnityWorkshop.Tests.GameplayTests" runstate="Runnable" seed="1088008967" result="Passed" start-time="2026-10-30 04:46:38Z" end-time="2026-10-30 04:46:38Z" duration="0.176317" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[Saving results to: C:/Users/toxic/AppData/LocalLow/DefaultCompany/Christwood-Unity-Kit\TestResults.xml
+]]></output>
+            </test-case>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

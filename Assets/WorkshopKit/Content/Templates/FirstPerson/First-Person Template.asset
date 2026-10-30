@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fc5d4538a2abbe4485cc0a724664b8a, type: 3}
+  m_Name: First-Person Template
+  m_EditorClassIdentifier: UnityWorkshop.Runtime::UnityWorkshop.GameTemplateDefinition
+  m_DisplayName: First-Person
+  m_Perspective: 1
+  m_Description: See through the player's eyes. Great for mazes, exploring and jumping
+    challenges.
+  m_Controls: 'WASD: Move
+
+    Mouse: Look
+
+    Space: Jump'
+  m_Preview: {fileID: 2800000, guid: 64b887df210ae9d4785b88e9f3093a13, type: 3}
+  m_CanJump: 1
+  m_PlayerPrefab: {fileID: 8787713132759410728, guid: 2bf7440f0030e81489d9d70e6854fe8e, type: 3}
+  m_CameraRigPrefab: {fileID: 1910336067233132840, guid: dbc840de1c09694468e59f9d4e69d7b6, type: 3}
+  m_MovementPresets:
+  - {fileID: 11400000, guid: 674908d148fdd594ca5990faedd16fea, type: 2}
+  - {fileID: 11400000, guid: 8c24a05a813198840981fc84226af3fd, type: 2}
+  - {fileID: 11400000, guid: 90a73b4782661924eb1a6f75db2355eb, type: 2}
+  m_StarterSceneGuid: 4c83379d3816db840a4143909ce5e21c

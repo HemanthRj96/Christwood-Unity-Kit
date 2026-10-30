@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="38" result="Passed" total="38" passed="38" failed="0" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-10-30 05:06:58Z" end-time="2026-10-30 05:07:06Z" duration="7.4403392">
+  <test-suite type="TestSuite" id="1000" name="Christwood-Unity-Kit" fullname="Christwood-Unity-Kit" runstate="Runnable" testcasecount="38" result="Passed" start-time="2026-10-30 05:06:58Z" end-time="2026-10-30 05:07:06Z" duration="7.440339" total="38" passed="38" failed="0" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="EditMode" />
+    </properties>
+    <test-suite type="Assembly" id="1051" name="UnityWorkshop.Tests.Editor.dll" fullname="C:/_My Stuff/Work/Unity/Christwood-Unity-Kit/Library/ScriptAssemblies/UnityWorkshop.Tests.Editor.dll" runstate="Runnable" testcasecount="38" result="Passed" start-time="2026-10-30 05:06:58Z" end-time="2026-10-30 05:07:06Z" duration="7.434340" total="38" passed="38" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="29244" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="EditMode" />
+        <property name="EditorOnly" value="True" />
+      </properties>
+      <test-suite type="TestSuite" id="1052" name="UnityWorkshop" fullname="UnityWorkshop" runstate="Runnable" testcasecount="38" result="Passed" start-time="2026-10-30 05:06:58Z" end-time="2026-10-30 05:07:06Z" duration="7.433734" total="38" passed="38" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-suite type="TestSuite" id="1053" name="Tests" fullname="UnityWorkshop.Tests" runstate="Runnable" testcasecount="38" result="Passed" start-time="2026-10-30 05:06:58Z" end-time="2026-10-30 05:07:06Z" duration="7.433357" total="38" passed="38" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-suite type="TestFixture" id="1009" name="AuthoringTests" fullname="UnityWorkshop.Tests.AuthoringTests" classname="UnityWorkshop.Tests.AuthoringTests" runstate="Runnable" testcasecount="18" result="Passed" start-time="2026-10-30 05:06:58Z" end-time="2026-10-30 05:07:03Z" duration="4.982264" total="18" passed="18" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1014" name="CatalogPrefabsAreAssignedAndCompatible" fullname="UnityWorkshop.Tests.AuthoringTests.CatalogPrefabsAreAssignedAndCompatible" methodname="CatalogPrefabsAreAssignedAndCompatible" classname="UnityWorkshop.Tests.AuthoringTests" runstate="Runnable" seed="1515376779" result="Passed" start-time="2026-10-30 05:06:58Z" end-time="2026-10-30 05:06:58Z" duration="0.038759" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1027" name="ChannelChangeUpdatesLookAndIsUndoable" fullname="UnityWorkshop.Tests.AuthoringTests.ChannelChangeUpdatesLookAndIsUndoable" methodname="ChannelChangeUpdatesLookAndIsUndoable" classname="UnityWorkshop.Tests.AuthoringTests" runstate="Runnable" seed="340267831" result="Passed" start-time="2026-10-30 05:06:58Z" end-time="2026-10-30 05:06:58Z" duration="0.335608" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1018" name="CollectAllWithoutCollectiblesIsAnErrorWithSafeFix" fullname="UnityWorkshop.Tests.AuthoringTests.CollectAllWithoutCollectiblesIsAnErrorWithSafeFix" methodname="CollectAllWithoutCollectiblesIsAnErrorWithSafeFix" classname="UnityWorkshop.Tests.AuthoringTests" runstate="Runnable" seed="1408486953" result="Passed" start-time="2026-10-30 05:06:58Z" end-time="2026-10-30 05:06:59Z" duration="0.218000" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1015" name="CreatingTeamScenesNeverOverwrites" fullname="UnityWorkshop.Tests.AuthoringTests.CreatingTeamScenesNeverOverwrites" methodname="CreatingTeamScenesNeverOverwrites" classname="UnityWorkshop.Tests.AuthoringTests" runstate="Runnable" seed="1264322337" result="Passed" start-time="2026-10-30 05:06:59Z" end-time="2026-10-30 05:07:00Z" duration="1.464778" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1024" name="DoorWithoutKeyOrSwitchIsReported" fullname="UnityWorkshop.Tests.AuthoringTests.DoorWithoutKeyOrSwitchIsReported" methodname="DoorWithoutKeyOrSwitchIsReported" classname="UnityWorkshop.Tests.AuthoringTests" runstate="Runnable" seed="455289152" result="Passed" start-time="2026-10-30 05:07:00Z" end-time="2026-10-30 05:07:00Z" duration="0.217267" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1023" name="EveryKitAssetLoadsWithItsScript" fullname="UnityWorkshop.Tests.AuthoringTests.EveryKitAssetLoadsWithItsScript" methodname="EveryKitAssetLoadsWithItsScript" classname="UnityWorkshop.Tests.AuthoringTests" runstate="Runnable" seed="1358354952" result="Passed" start-time="2026-10-30 05:07:00Z" end-time="2026-10-30 05:07:00Z" duration="0.026993" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1021" name="ExtraCameraAndListenerAreReported" fullname="UnityWorkshop.Tests.AuthoringTests.ExtraCameraAndListenerAreReported" methodname="ExtraCameraAndListenerAreReported" classname="UnityWorkshop.Tests.AuthoringTests" runstate="Runnable" seed="2137124880" result="Passed" start-time="2026-10-30 05:07:00Z" end-time="2026-10-30 05:07:01Z" duration="0.201146" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-suite type="ParameterizedMethod" id="1012" name="GeneratedScenesPassPreflight" fullname="UnityWorkshop.Tests.AuthoringTests.GeneratedScenesPassPreflight" classname="UnityWorkshop.Tests.AuthoringTests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-10-30 05:07:01Z" end-time="2026-10-30 05:07:01Z" duration="0.418554" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1010" name="GeneratedScenesPassPreflight(&quot;Assets/WorkshopKit/Content/Templates/TopDown/TopDown_Starter.unity&quot;)" fullname="UnityWorkshop.Tests.AuthoringTests.GeneratedScenesPassPreflight(&quot;Assets/WorkshopKit/Content/Templates/TopDown/TopDown_Starter.unity&quot;)" methodname="GeneratedScenesPassPreflight" classname="UnityWorkshop.Tests.AuthoringTests" runstate="Runnable" seed="2128184214" result="Passed" start-time="2026-10-30 05:07:01Z" end-time="2026-10-30 05:07:01Z" duration="0.197077" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1011" name="GeneratedScenesPassPreflight(&quot;Assets/WorkshopKit/Examples/TopDown_Example.unity&quot;)" fullname="UnityWorkshop.Tests.AuthoringTests.GeneratedScenesPassPreflight(&quot;Assets/WorkshopKit/Examples/TopDown_Example.unity&quot;)" methodname="GeneratedScenesPassPreflight" classname="UnityWorkshop.Tests.AuthoringTests" runstate="Runnable" seed="1360772948" result="Passed" start-time="2026-10-30 05:07:01Z" end-time="2026-10-30 05:07:01Z" duration="0.215354" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+            </test-suite>
+            <test-case id="1019" name="MissingSystemFixesAreIdempotent" fullname="UnityWorkshop.Tests.AuthoringTests.MissingSystemFixesAreIdempotent" methodname="MissingSystemFixesAreIdempotent" classname="UnityWorkshop.Tests.AuthoringTests" runstate="Runnable" seed="1882652949" result="Passed" start-time="2026-10-30 05:07:01Z" end-time="2026-10-30 05:07:01Z" duration="0.211415" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1026" name="MoverWithoutPathAndCheckpointInHazardAreReported" fullname="UnityWorkshop.Tests.AuthoringTests.MoverWithoutPathAndCheckpointInHazardAreReported" methodname="MoverWithoutPathAndCheckpointInHazardAreReported" classname="UnityWorkshop.Tests.AuthoringTests" runstate="Runnable" seed="1051522890" result="Passed" start-time="2026-10-30 05:07:01Z" end-time="2026-10-30 05:07:01Z" duration="0.212927" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1017" name="PreflightReportsAuthoringErrors" fullname="UnityWorkshop.Tests.AuthoringTests.PreflightReportsAuthoringErrors" methodname="PreflightReportsAuthoringErrors" classname="UnityWorkshop.Tests.AuthoringTests" runstate="Runnable" seed="1020442956" result="Passed" start-time="2026-10-30 05:07:01Z" end-time="2026-10-30 05:07:02Z" duration="0.199310" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1022" name="RuntimeAssemblyHasNoEditorReferences" fullname="UnityWorkshop.Tests.AuthoringTests.RuntimeAssemblyHasNoEditorReferences" methodname="RuntimeAssemblyHasNoEditorReferences" classname="UnityWorkshop.Tests.AuthoringTests" runstate="Runnable" seed="724016657" result="Passed" start-time="2026-10-30 05:07:02Z" end-time="2026-10-30 05:07:02Z" duration="0.008983" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1028" name="SharedPresetsAreNotTeamSettings" fullname="UnityWorkshop.Tests.AuthoringTests.SharedPresetsAreNotTeamSettings" methodname="SharedPresetsAreNotTeamSettings" classname="UnityWorkshop.Tests.AuthoringTests" runstate="Runnable" seed="603211801" result="Passed" start-time="2026-10-30 05:07:02Z" end-time="2026-10-30 05:07:03Z" duration="0.955577" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1020" name="SolidHazardIsReportedAndFixable" fullname="UnityWorkshop.Tests.AuthoringTests.SolidHazardIsReportedAndFixable" methodname="SolidHazardIsReportedAndFixable" classname="UnityWorkshop.Tests.AuthoringTests" runstate="Runnable" seed="1779764896" result="Passed" start-time="2026-10-30 05:07:03Z" end-time="2026-10-30 05:07:03Z" duration="0.217460" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1025" name="StartBelowFallHeightIsAnErrorWithFix" fullname="UnityWorkshop.Tests.AuthoringTests.StartBelowFallHeightIsAnErrorWithFix" methodname="StartBelowFallHeightIsAnErrorWithFix" classname="UnityWorkshop.Tests.AuthoringTests" runstate="Runnable" seed="629047975" result="Passed" start-time="2026-10-30 05:07:03Z" end-time="2026-10-30 05:07:03Z" duration="0.216067" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1016" name="TeamNameIsSanitized" fullname="UnityWorkshop.Tests.AuthoringTests.TeamNameIsSanitized" methodname="TeamNameIsSanitized" classname="UnityWorkshop.Tests.AuthoringTests" runstate="Runnable" seed="641968118" result="Passed" start-time="2026-10-30 05:07:03Z" end-time="2026-10-30 05:07:03Z" duration="0.010485" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1013" name="TemplateIsComplete" fullname="UnityWorkshop.Tests.AuthoringTests.TemplateIsComplete" methodname="TemplateIsComplete" classname="UnityWorkshop.Tests.AuthoringTests" runstate="Runnable" seed="2063062962" result="Passed" start-time="2026-10-30 05:07:03Z" end-time="2026-10-30 05:07:03Z" duration="0.010649" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+          </test-suite>
+          <test-suite type="TestFixture" id="1029" name="PlaySessionTests" fullname="UnityWorkshop.Tests.PlaySessionTests" classname="UnityWorkshop.Tests.PlaySessionTests" runstate="Runnable" testcasecount="1" result="Passed" start-time="2026-10-30 05:07:03Z" end-time="2026-10-30 05:07:06Z" duration="2.442634" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1030" name="RepeatedPlaySessionsStartClean" fullname="UnityWorkshop.Tests.PlaySessionTests.RepeatedPlaySessionsStartClean" methodname="RepeatedPlaySessionsStartClean" classname="UnityWorkshop.Tests.PlaySessionTests" runstate="Runnable" seed="793855572" result="Passed" start-time="2026-10-30 05:07:03Z" end-time="2026-10-30 05:07:06Z" duration="2.440495" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+          </test-suite>
+          <test-suite type="TestFixture" id="1031" name="SessionTests" fullname="UnityWorkshop.Tests.SessionTests" classname="UnityWorkshop.Tests.SessionTests" runstate="Runnable" testcasecount="19" result="Passed" start-time="2026-10-30 05:07:06Z" end-time="2026-10-30 05:07:06Z" duration="0.007372" total="19" passed="19" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1049" name="ChannelsIgnoreActionsOutsidePlay" fullname="UnityWorkshop.Tests.SessionTests.ChannelsIgnoreActionsOutsidePlay" methodname="ChannelsIgnoreActionsOutsidePlay" classname="UnityWorkshop.Tests.SessionTests" runstate="Runnable" seed="830117275" result="Passed" start-time="2026-10-30 05:07:06Z" end-time="2026-10-30 05:07:06Z" duration="0.000791" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1033" name="CollectAllBlocksGoalUntilEverythingIsCollected" fullname="UnityWorkshop.Tests.SessionTests.CollectAllBlocksGoalUntilEverythingIsCollected" methodname="CollectAllBlocksGoalUntilEverythingIsCollected" classname="UnityWorkshop.Tests.SessionTests" runstate="Runnable" seed="10731372" result="Passed" start-time="2026-10-30 05:07:06Z" end-time="2026-10-30 05:07:06Z" duration="0.000445" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1032" name="CollectCountsEachItemOnce" fullname="UnityWorkshop.Tests.SessionTests.CollectCountsEachItemOnce" methodname="CollectCountsEachItemOnce" classname="UnityWorkshop.Tests.SessionTests" runstate="Runnable" seed="945988702" result="Passed" start-time="2026-10-30 05:07:06Z" end-time="2026-10-30 05:07:06Z" duration="0.000283" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1042" name="ExpiredTimerBeatsSimultaneousGoal" fullname="UnityWorkshop.Tests.SessionTests.ExpiredTimerBeatsSimultaneousGoal" methodname="ExpiredTimerBeatsSimultaneousGoal" classname="UnityWorkshop.Tests.SessionTests" runstate="Runnable" seed="715905075" result="Passed" start-time="2026-10-30 05:07:06Z" end-time="2026-10-30 05:07:06Z" duration="0.000373" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1050" name="FallRespawnIgnoresHazardProtection" fullname="UnityWorkshop.Tests.SessionTests.FallRespawnIgnoresHazardProtection" methodname="FallRespawnIgnoresHazardProtection" classname="UnityWorkshop.Tests.SessionTests" runstate="Runnable" seed="673188902" result="Passed" start-time="2026-10-30 05:07:06Z" end-time="2026-10-30 05:07:06Z" duration="0.000224" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1046" name="KeysOpenOnlyTheirOwnChannel" fullname="UnityWorkshop.Tests.SessionTests.KeysOpenOnlyTheirOwnChannel" methodname="KeysOpenOnlyTheirOwnChannel" classname="UnityWorkshop.Tests.SessionTests" runstate="Runnable" seed="1888980759" result="Passed" start-time="2026-10-30 05:07:06Z" end-time="2026-10-30 05:07:06Z" duration="0.000389" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1048" name="LatchAndKeyKeepTheChannelOpen" fullname="UnityWorkshop.Tests.SessionTests.LatchAndKeyKeepTheChannelOpen" methodname="LatchAndKeyKeepTheChannelOpen" classname="UnityWorkshop.Tests.SessionTests" runstate="Runnable" seed="129654734" result="Passed" start-time="2026-10-30 05:07:06Z" end-time="2026-10-30 05:07:06Z" duration="0.000175" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1044" name="NoTimerNeverExpires" fullname="UnityWorkshop.Tests.SessionTests.NoTimerNeverExpires" methodname="NoTimerNeverExpires" classname="UnityWorkshop.Tests.SessionTests" runstate="Runnable" seed="480044573" result="Passed" start-time="2026-10-30 05:07:06Z" end-time="2026-10-30 05:07:06Z" duration="0.000148" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1038" name="PauseRestoresThePausedState" fullname="UnityWorkshop.Tests.SessionTests.PauseRestoresThePausedState" methodname="PauseRestoresThePausedState" classname="UnityWorkshop.Tests.SessionTests" runstate="Runnable" seed="1340831960" result="Passed" start-time="2026-10-30 05:07:06Z" end-time="2026-10-30 05:07:06Z" duration="0.000221" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1034" name="ReachExitWinsImmediately" fullname="UnityWorkshop.Tests.SessionTests.ReachExitWinsImmediately" methodname="ReachExitWinsImmediately" classname="UnityWorkshop.Tests.SessionTests" runstate="Runnable" seed="1134652977" result="Passed" start-time="2026-10-30 05:07:06Z" end-time="2026-10-30 05:07:06Z" duration="0.000114" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1040" name="ReadyRejectsGameplayUntilBegin" fullname="UnityWorkshop.Tests.SessionTests.ReadyRejectsGameplayUntilBegin" methodname="ReadyRejectsGameplayUntilBegin" classname="UnityWorkshop.Tests.SessionTests" runstate="Runnable" seed="927901946" result="Passed" start-time="2026-10-30 05:07:06Z" end-time="2026-10-30 05:07:06Z" duration="0.000149" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1037" name="RespawnKeepsCollectionAndClock" fullname="UnityWorkshop.Tests.SessionTests.RespawnKeepsCollectionAndClock" methodname="RespawnKeepsCollectionAndClock" classname="UnityWorkshop.Tests.SessionTests" runstate="Runnable" seed="1585567359" result="Passed" start-time="2026-10-30 05:07:06Z" end-time="2026-10-30 05:07:06Z" duration="0.000251" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1036" name="RespawnRunsThenProtectsThenEnds" fullname="UnityWorkshop.Tests.SessionTests.RespawnRunsThenProtectsThenEnds" methodname="RespawnRunsThenProtectsThenEnds" classname="UnityWorkshop.Tests.SessionTests" runstate="Runnable" seed="1598233997" result="Passed" start-time="2026-10-30 05:07:06Z" end-time="2026-10-30 05:07:06Z" duration="0.000342" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1039" name="ShutdownStopsAllEvents" fullname="UnityWorkshop.Tests.SessionTests.ShutdownStopsAllEvents" methodname="ShutdownStopsAllEvents" classname="UnityWorkshop.Tests.SessionTests" runstate="Runnable" seed="1934646015" result="Passed" start-time="2026-10-30 05:07:06Z" end-time="2026-10-30 05:07:06Z" duration="0.000209" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1047" name="SwitchesCombineWithOr" fullname="UnityWorkshop.Tests.SessionTests.SwitchesCombineWithOr" methodname="SwitchesCombineWithOr" classname="UnityWorkshop.Tests.SessionTests" runstate="Runnable" seed="1335123472" result="Passed" start-time="2026-10-30 05:07:06Z" end-time="2026-10-30 05:07:06Z" duration="0.000232" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1035" name="TerminalStateRejectsFurtherActions" fullname="UnityWorkshop.Tests.SessionTests.TerminalStateRejectsFurtherActions" methodname="TerminalStateRejectsFurtherActions" classname="UnityWorkshop.Tests.SessionTests" runstate="Runnable" seed="959376237" result="Passed" start-time="2026-10-30 05:07:06Z" end-time="2026-10-30 05:07:06Z" duration="0.000243" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1041" name="TimerExpiryLosesOnce" fullname="UnityWorkshop.Tests.SessionTests.TimerExpiryLosesOnce" methodname="TimerExpiryLosesOnce" classname="UnityWorkshop.Tests.SessionTests" runstate="Runnable" seed="279782828" result="Passed" start-time="2026-10-30 05:07:06Z" end-time="2026-10-30 05:07:06Z" duration="0.000320" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1043" name="TimerPausesAndKeepsRunningDuringRespawn" fullname="UnityWorkshop.Tests.SessionTests.TimerPausesAndKeepsRunningDuringRespawn" methodname="TimerPausesAndKeepsRunningDuringRespawn" classname="UnityWorkshop.Tests.SessionTests" runstate="Runnable" seed="885104437" result="Passed" start-time="2026-10-30 05:07:06Z" end-time="2026-10-30 05:07:06Z" duration="0.000155" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1045" name="TimerPresetsShowRealSeconds" fullname="UnityWorkshop.Tests.SessionTests.TimerPresetsShowRealSeconds" methodname="TimerPresetsShowRealSeconds" classname="UnityWorkshop.Tests.SessionTests" runstate="Runnable" seed="65574611" result="Passed" start-time="2026-10-30 05:07:06Z" end-time="2026-10-30 05:07:06Z" duration="0.000121" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[Saving results to: C:/Users/toxic/AppData/LocalLow/DefaultCompany/Christwood-Unity-Kit\TestResults.xml
+]]></output>
+            </test-case>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

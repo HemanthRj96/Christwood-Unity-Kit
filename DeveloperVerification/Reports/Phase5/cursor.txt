@@ -1,0 +1,2 @@
+﻿paused: cursor visible = True
+resumed: cursor visible = True

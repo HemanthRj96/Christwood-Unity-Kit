@@ -1,0 +1,633 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="78" result="Failed(Child)" total="78" passed="70" failed="8" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-10-30 06:21:19Z" end-time="2026-10-30 06:21:50Z" duration="30.9247208">
+  <test-suite type="TestSuite" id="1000" name="Christwood-Unity-Kit" fullname="Christwood-Unity-Kit" runstate="Runnable" testcasecount="78" result="Failed" site="Child" start-time="2026-10-30 06:21:19Z" end-time="2026-10-30 06:21:50Z" duration="30.924721" total="78" passed="70" failed="8" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="EditMode" />
+    </properties>
+    <failure>
+      <message><![CDATA[One or more child tests had errors]]></message>
+    </failure>
+    <test-suite type="Assembly" id="1096" name="UnityWorkshop.Tests.Editor.dll" fullname="C:/_My Stuff/Work/Unity/Christwood-Unity-Kit/Library/ScriptAssemblies/UnityWorkshop.Tests.Editor.dll" runstate="Runnable" testcasecount="78" result="Failed" site="Child" start-time="2026-10-30 06:21:19Z" end-time="2026-10-30 06:21:50Z" duration="30.912359" total="78" passed="70" failed="8" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="19072" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="EditMode" />
+        <property name="EditorOnly" value="True" />
+      </properties>
+      <failure>
+        <message><![CDATA[One or more child tests had errors]]></message>
+      </failure>
+      <test-suite type="TestSuite" id="1097" name="UnityWorkshop" fullname="UnityWorkshop" runstate="Runnable" testcasecount="78" result="Failed" site="Child" start-time="2026-10-30 06:21:19Z" end-time="2026-10-30 06:21:50Z" duration="30.911285" total="78" passed="70" failed="8" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <failure>
+          <message><![CDATA[One or more child tests had errors]]></message>
+        </failure>
+        <test-suite type="TestSuite" id="1098" name="Tests" fullname="UnityWorkshop.Tests" runstate="Runnable" testcasecount="78" result="Failed" site="Child" start-time="2026-10-30 06:21:19Z" end-time="2026-10-30 06:21:50Z" duration="30.910483" total="78" passed="70" failed="8" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <failure>
+            <message><![CDATA[One or more child tests had errors]]></message>
+          </failure>
+          <test-suite type="TestFixture" id="1009" name="AdoptionTests" fullname="UnityWorkshop.Tests.AdoptionTests" classname="UnityWorkshop.Tests.AdoptionTests" runstate="Runnable" testcasecount="11" result="Failed" site="Child" start-time="2026-10-30 06:21:19Z" end-time="2026-10-30 06:21:30Z" duration="11.354653" total="11" passed="4" failed="7" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <failure>
+              <message><![CDATA[One or more child tests had errors]]></message>
+            </failure>
+            <test-case id="1020" name="AdoptedLookPlaysWithTheWorkshopMotor" fullname="UnityWorkshop.Tests.AdoptionTests.AdoptedLookPlaysWithTheWorkshopMotor" methodname="AdoptedLookPlaysWithTheWorkshopMotor" classname="UnityWorkshop.Tests.AdoptionTests" runstate="Runnable" seed="1036331829" result="Failed" label="Error" start-time="2026-10-30 06:21:19Z" end-time="2026-10-30 06:21:21Z" duration="1.877397" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <failure>
+                <message><![CDATA[UnityEngine.MissingReferenceException : The object of type 'UnityWorkshop.AdoptedAsset' has been destroyed but you are still trying to access it.
+Your script should either check if it is null or you should not destroy the object.]]></message>
+                <stack-trace><![CDATA[  at UnityEngine.Object+MarshalledUnityObject.TryThrowEditorNullExceptionObject (UnityEngine.Object unityObj, System.String parameterName) [0x00065] in <0ce87f9710ab4aa994e7b9ccfb3ea0fb>:0 
+  at UnityEngine.Bindings.ThrowHelper.ThrowNullReferenceException (System.Object obj) [0x0000a] in <0ce87f9710ab4aa994e7b9ccfb3ea0fb>:0 
+  at UnityEngine.Component.get_gameObject () [0x00006] in <0ce87f9710ab4aa994e7b9ccfb3ea0fb>:0 
+  at UnityWorkshop.WorkshopAssetAdoption.ApplyPlayerLook (UnityWorkshop.WorkshopPlayer player, UnityWorkshop.AdoptedAsset look) [0x000a2] in C:\_My Stuff\Work\Unity\Christwood-Unity-Kit\Assets\WorkshopKit\Editor\Adoption\WorkshopAssetAdoption.cs:571 
+  at UnityWorkshop.Tests.AdoptionTests+<AdoptedLookPlaysWithTheWorkshopMotor>d__20.MoveNext () [0x0008b] in C:\_My Stuff\Work\Unity\Christwood-Unity-Kit\Assets\WorkshopKitDeveloper\Tests\Editor\AdoptionTests.cs:263 
+  at UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext () [0x0003a] in .\Library\PackageCache\com.unity.test-framework@1405238725ab\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:44 ]]></stack-trace>
+              </failure>
+              <output><![CDATA[Can't add script behaviour 'VendorSpinner' because it is an editor script. To attach a script it needs to be outside the 'Editor' folder.
+]]></output>
+            </test-case>
+            <test-case id="1018" name="AdoptedLookSurvivesAChangeOfTemplate" fullname="UnityWorkshop.Tests.AdoptionTests.AdoptedLookSurvivesAChangeOfTemplate" methodname="AdoptedLookSurvivesAChangeOfTemplate" classname="UnityWorkshop.Tests.AdoptionTests" runstate="Runnable" seed="1140359042" result="Failed" label="Error" start-time="2026-10-30 06:21:21Z" end-time="2026-10-30 06:21:22Z" duration="1.092604" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <failure>
+                <message><![CDATA[UnityEngine.MissingReferenceException : The object of type 'UnityWorkshop.AdoptedAsset' has been destroyed but you are still trying to access it.
+Your script should either check if it is null or you should not destroy the object.]]></message>
+                <stack-trace><![CDATA[  at UnityEngine.Object+MarshalledUnityObject.TryThrowEditorNullExceptionObject (UnityEngine.Object unityObj, System.String parameterName) [0x00065] in <0ce87f9710ab4aa994e7b9ccfb3ea0fb>:0 
+  at UnityEngine.Bindings.ThrowHelper.ThrowNullReferenceException (System.Object obj) [0x0000a] in <0ce87f9710ab4aa994e7b9ccfb3ea0fb>:0 
+  at UnityEngine.Component.get_gameObject () [0x00006] in <0ce87f9710ab4aa994e7b9ccfb3ea0fb>:0 
+  at UnityWorkshop.WorkshopAssetAdoption.ApplyPlayerLook (UnityWorkshop.WorkshopPlayer player, UnityWorkshop.AdoptedAsset look) [0x000a2] in C:\_My Stuff\Work\Unity\Christwood-Unity-Kit\Assets\WorkshopKit\Editor\Adoption\WorkshopAssetAdoption.cs:571 
+  at UnityWorkshop.Tests.AdoptionTests.AdoptedLookSurvivesAChangeOfTemplate () [0x0002d] in C:\_My Stuff\Work\Unity\Christwood-Unity-Kit\Assets\WorkshopKitDeveloper\Tests\Editor\AdoptionTests.cs:228 
+  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x0006a] in <816f70bc2a9c4332b0bd119906a8d40e>:0 ]]></stack-trace>
+              </failure>
+              <output><![CDATA[Can't add script behaviour 'VendorSpinner' because it is an editor script. To attach a script it needs to be outside the 'Editor' folder.
+]]></output>
+            </test-case>
+            <test-case id="1011" name="AdoptedPropIsAnOwnedWrapperAndVendorFilesAreUntouched" fullname="UnityWorkshop.Tests.AdoptionTests.AdoptedPropIsAnOwnedWrapperAndVendorFilesAreUntouched" methodname="AdoptedPropIsAnOwnedWrapperAndVendorFilesAreUntouched" classname="UnityWorkshop.Tests.AdoptionTests" runstate="Runnable" seed="1133343628" result="Failed" start-time="2026-10-30 06:21:22Z" end-time="2026-10-30 06:21:23Z" duration="0.872612" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <failure>
+                <message><![CDATA[  Expected: RGBA(0.800, 0.200, 0.100, 1.000)
+  But was:  RGBA(0.800, 0.200, 0.100, 1.000)
+]]></message>
+                <stack-trace><![CDATA[at UnityWorkshop.Tests.AdoptionTests.AdoptedPropIsAnOwnedWrapperAndVendorFilesAreUntouched () [0x002ed] in C:\_My Stuff\Work\Unity\Christwood-Unity-Kit\Assets\WorkshopKitDeveloper\Tests\Editor\AdoptionTests.cs:103
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[Can't add script behaviour 'VendorSpinner' because it is an editor script. To attach a script it needs to be outside the 'Editor' folder.
+]]></output>
+            </test-case>
+            <test-case id="1015" name="AdoptedPropIsInTheCatalogAndPlacesCleanly" fullname="UnityWorkshop.Tests.AdoptionTests.AdoptedPropIsInTheCatalogAndPlacesCleanly" methodname="AdoptedPropIsInTheCatalogAndPlacesCleanly" classname="UnityWorkshop.Tests.AdoptionTests" runstate="Runnable" seed="2101187257" result="Passed" start-time="2026-10-30 06:21:23Z" end-time="2026-10-30 06:21:24Z" duration="1.128653" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[Can't add script behaviour 'VendorSpinner' because it is an editor script. To attach a script it needs to be outside the 'Editor' folder.
+]]></output>
+            </test-case>
+            <test-case id="1010" name="AnalysisDetectsConflictsAndMaterials" fullname="UnityWorkshop.Tests.AdoptionTests.AnalysisDetectsConflictsAndMaterials" methodname="AnalysisDetectsConflictsAndMaterials" classname="UnityWorkshop.Tests.AdoptionTests" runstate="Runnable" seed="746973632" result="Failed" start-time="2026-10-30 06:21:24Z" end-time="2026-10-30 06:21:24Z" duration="0.451227" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <failure>
+                <message><![CDATA[  VendorSpinner
+  Expected: True
+  But was:  False
+]]></message>
+                <stack-trace><![CDATA[at UnityWorkshop.Tests.AdoptionTests.AnalysisDetectsConflictsAndMaterials () [0x00080] in C:\_My Stuff\Work\Unity\Christwood-Unity-Kit\Assets\WorkshopKitDeveloper\Tests\Editor\AdoptionTests.cs:61
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[Can't add script behaviour 'VendorSpinner' because it is an editor script. To attach a script it needs to be outside the 'Editor' folder.
+]]></output>
+            </test-case>
+            <test-case id="1013" name="ConflictingPartsAreTurnedOffOnlyInTheOwnedCopy" fullname="UnityWorkshop.Tests.AdoptionTests.ConflictingPartsAreTurnedOffOnlyInTheOwnedCopy" methodname="ConflictingPartsAreTurnedOffOnlyInTheOwnedCopy" classname="UnityWorkshop.Tests.AdoptionTests" runstate="Runnable" seed="1398438765" result="Failed" label="Error" start-time="2026-10-30 06:21:24Z" end-time="2026-10-30 06:21:25Z" duration="0.825262" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <failure>
+                <message><![CDATA[System.NullReferenceException : Object reference not set to an instance of an object]]></message>
+                <stack-trace><![CDATA[  at UnityWorkshop.Tests.AdoptionTests.ConflictingPartsAreTurnedOffOnlyInTheOwnedCopy () [0x001eb] in C:\_My Stuff\Work\Unity\Christwood-Unity-Kit\Assets\WorkshopKitDeveloper\Tests\Editor\AdoptionTests.cs:143 
+  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x0006a] in <816f70bc2a9c4332b0bd119906a8d40e>:0 ]]></stack-trace>
+              </failure>
+              <output><![CDATA[Can't add script behaviour 'VendorSpinner' because it is an editor script. To attach a script it needs to be outside the 'Editor' folder.
+]]></output>
+            </test-case>
+            <test-case id="1014" name="FailedAdoptionRemovesOnlyItsOwnFiles" fullname="UnityWorkshop.Tests.AdoptionTests.FailedAdoptionRemovesOnlyItsOwnFiles" methodname="FailedAdoptionRemovesOnlyItsOwnFiles" classname="UnityWorkshop.Tests.AdoptionTests" runstate="Runnable" seed="156920099" result="Passed" start-time="2026-10-30 06:21:25Z" end-time="2026-10-30 06:21:26Z" duration="1.109468" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[Can't add script behaviour 'VendorSpinner' because it is an editor script. To attach a script it needs to be outside the 'Editor' folder.
+]]></output>
+            </test-case>
+            <test-case id="1019" name="LocomotionControllerMappingIsComplete" fullname="UnityWorkshop.Tests.AdoptionTests.LocomotionControllerMappingIsComplete" methodname="LocomotionControllerMappingIsComplete" classname="UnityWorkshop.Tests.AdoptionTests" runstate="Runnable" seed="154818509" result="Passed" start-time="2026-10-30 06:21:26Z" end-time="2026-10-30 06:21:27Z" duration="0.728804" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[Can't add script behaviour 'VendorSpinner' because it is an editor script. To attach a script it needs to be outside the 'Editor' folder.
+]]></output>
+            </test-case>
+            <test-case id="1017" name="PlayerLookIsUndoableAndHiddenFromAFirstPersonCamera" fullname="UnityWorkshop.Tests.AdoptionTests.PlayerLookIsUndoableAndHiddenFromAFirstPersonCamera" methodname="PlayerLookIsUndoableAndHiddenFromAFirstPersonCamera" classname="UnityWorkshop.Tests.AdoptionTests" runstate="Runnable" seed="1932745773" result="Failed" label="Error" start-time="2026-10-30 06:21:27Z" end-time="2026-10-30 06:21:28Z" duration="1.019824" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <failure>
+                <message><![CDATA[UnityEngine.MissingReferenceException : The object of type 'UnityWorkshop.AdoptedAsset' has been destroyed but you are still trying to access it.
+Your script should either check if it is null or you should not destroy the object.]]></message>
+                <stack-trace><![CDATA[  at UnityEngine.Object+MarshalledUnityObject.TryThrowEditorNullExceptionObject (UnityEngine.Object unityObj, System.String parameterName) [0x00065] in <0ce87f9710ab4aa994e7b9ccfb3ea0fb>:0 
+  at UnityEngine.Bindings.ThrowHelper.ThrowNullReferenceException (System.Object obj) [0x0000a] in <0ce87f9710ab4aa994e7b9ccfb3ea0fb>:0 
+  at UnityEngine.Component.get_gameObject () [0x00006] in <0ce87f9710ab4aa994e7b9ccfb3ea0fb>:0 
+  at UnityWorkshop.WorkshopAssetAdoption.ApplyPlayerLook (UnityWorkshop.WorkshopPlayer player, UnityWorkshop.AdoptedAsset look) [0x000a2] in C:\_My Stuff\Work\Unity\Christwood-Unity-Kit\Assets\WorkshopKit\Editor\Adoption\WorkshopAssetAdoption.cs:571 
+  at UnityWorkshop.Tests.AdoptionTests.PlayerLookIsUndoableAndHiddenFromAFirstPersonCamera () [0x00037] in C:\_My Stuff\Work\Unity\Christwood-Unity-Kit\Assets\WorkshopKitDeveloper\Tests\Editor\AdoptionTests.cs:215 
+  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x0006a] in <816f70bc2a9c4332b0bd119906a8d40e>:0 ]]></stack-trace>
+              </failure>
+              <output><![CDATA[Can't add script behaviour 'VendorSpinner' because it is an editor script. To attach a script it needs to be outside the 'Editor' folder.
+]]></output>
+            </test-case>
+            <test-case id="1016" name="PlayerLookReplacesTheModelWithoutCompetingMotion" fullname="UnityWorkshop.Tests.AdoptionTests.PlayerLookReplacesTheModelWithoutCompetingMotion" methodname="PlayerLookReplacesTheModelWithoutCompetingMotion" classname="UnityWorkshop.Tests.AdoptionTests" runstate="Runnable" seed="545511669" result="Failed" label="Error" start-time="2026-10-30 06:21:28Z" end-time="2026-10-30 06:21:29Z" duration="1.044426" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <failure>
+                <message><![CDATA[UnityEngine.MissingReferenceException : The object of type 'UnityWorkshop.AdoptedAsset' has been destroyed but you are still trying to access it.
+Your script should either check if it is null or you should not destroy the object.]]></message>
+                <stack-trace><![CDATA[  at UnityEngine.Object+MarshalledUnityObject.TryThrowEditorNullExceptionObject (UnityEngine.Object unityObj, System.String parameterName) [0x00065] in <0ce87f9710ab4aa994e7b9ccfb3ea0fb>:0 
+  at UnityEngine.Bindings.ThrowHelper.ThrowNullReferenceException (System.Object obj) [0x0000a] in <0ce87f9710ab4aa994e7b9ccfb3ea0fb>:0 
+  at UnityEngine.Component.get_gameObject () [0x00006] in <0ce87f9710ab4aa994e7b9ccfb3ea0fb>:0 
+  at UnityWorkshop.WorkshopAssetAdoption.ApplyPlayerLook (UnityWorkshop.WorkshopPlayer player, UnityWorkshop.AdoptedAsset look) [0x000a2] in C:\_My Stuff\Work\Unity\Christwood-Unity-Kit\Assets\WorkshopKit\Editor\Adoption\WorkshopAssetAdoption.cs:571 
+  at UnityWorkshop.Tests.AdoptionTests.PlayerLookReplacesTheModelWithoutCompetingMotion () [0x000fe] in C:\_My Stuff\Work\Unity\Christwood-Unity-Kit\Assets\WorkshopKitDeveloper\Tests\Editor\AdoptionTests.cs:193 
+  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x0006a] in <816f70bc2a9c4332b0bd119906a8d40e>:0 ]]></stack-trace>
+              </failure>
+              <output><![CDATA[Can't add script behaviour 'VendorSpinner' because it is an editor script. To attach a script it needs to be outside the 'Editor' folder.
+]]></output>
+            </test-case>
+            <test-case id="1012" name="RepeatedAdoptionNeverCollides" fullname="UnityWorkshop.Tests.AdoptionTests.RepeatedAdoptionNeverCollides" methodname="RepeatedAdoptionNeverCollides" classname="UnityWorkshop.Tests.AdoptionTests" runstate="Runnable" seed="1539555922" result="Passed" start-time="2026-10-30 06:21:29Z" end-time="2026-10-30 06:21:30Z" duration="1.188449" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[Can't add script behaviour 'VendorSpinner' because it is an editor script. To attach a script it needs to be outside the 'Editor' folder.
+]]></output>
+            </test-case>
+          </test-suite>
+          <test-suite type="TestFixture" id="1021" name="AuthoringTests" fullname="UnityWorkshop.Tests.AuthoringTests" classname="UnityWorkshop.Tests.AuthoringTests" runstate="Runnable" testcasecount="24" result="Passed" start-time="2026-10-30 06:21:30Z" end-time="2026-10-30 06:21:36Z" duration="6.048726" total="24" passed="24" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1032" name="CatalogPrefabsAreAssignedAndCompatible" fullname="UnityWorkshop.Tests.AuthoringTests.CatalogPrefabsAreAssignedAndCompatible" methodname="CatalogPrefabsAreAssignedAndCompatible" classname="UnityWorkshop.Tests.AuthoringTests" runstate="Runnable" seed="444402633" result="Passed" start-time="2026-10-30 06:21:30Z" end-time="2026-10-30 06:21:30Z" duration="0.025190" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1045" name="ChannelChangeUpdatesLookAndIsUndoable" fullname="UnityWorkshop.Tests.AuthoringTests.ChannelChangeUpdatesLookAndIsUndoable" methodname="ChannelChangeUpdatesLookAndIsUndoable" classname="UnityWorkshop.Tests.AuthoringTests" runstate="Runnable" seed="1901814708" result="Passed" start-time="2026-10-30 06:21:30Z" end-time="2026-10-30 06:21:31Z" duration="0.224828" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1036" name="CollectAllWithoutCollectiblesIsAnErrorWithSafeFix" fullname="UnityWorkshop.Tests.AuthoringTests.CollectAllWithoutCollectiblesIsAnErrorWithSafeFix" methodname="CollectAllWithoutCollectiblesIsAnErrorWithSafeFix" classname="UnityWorkshop.Tests.AuthoringTests" runstate="Runnable" seed="640118337" result="Passed" start-time="2026-10-30 06:21:31Z" end-time="2026-10-30 06:21:31Z" duration="0.201643" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1033" name="CreatingTeamScenesNeverOverwrites" fullname="UnityWorkshop.Tests.AuthoringTests.CreatingTeamScenesNeverOverwrites" methodname="CreatingTeamScenesNeverOverwrites" classname="UnityWorkshop.Tests.AuthoringTests" runstate="Runnable" seed="2063498746" result="Passed" start-time="2026-10-30 06:21:31Z" end-time="2026-10-30 06:21:32Z" duration="1.402812" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1042" name="DoorWithoutKeyOrSwitchIsReported" fullname="UnityWorkshop.Tests.AuthoringTests.DoorWithoutKeyOrSwitchIsReported" methodname="DoorWithoutKeyOrSwitchIsReported" classname="UnityWorkshop.Tests.AuthoringTests" runstate="Runnable" seed="237906857" result="Passed" start-time="2026-10-30 06:21:32Z" end-time="2026-10-30 06:21:32Z" duration="0.217606" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1041" name="EveryKitAssetLoadsWithItsScript" fullname="UnityWorkshop.Tests.AuthoringTests.EveryKitAssetLoadsWithItsScript" methodname="EveryKitAssetLoadsWithItsScript" classname="UnityWorkshop.Tests.AuthoringTests" runstate="Runnable" seed="682832025" result="Passed" start-time="2026-10-30 06:21:32Z" end-time="2026-10-30 06:21:32Z" duration="0.029315" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1039" name="ExtraCameraAndListenerAreReported" fullname="UnityWorkshop.Tests.AuthoringTests.ExtraCameraAndListenerAreReported" methodname="ExtraCameraAndListenerAreReported" classname="UnityWorkshop.Tests.AuthoringTests" runstate="Runnable" seed="662721333" result="Passed" start-time="2026-10-30 06:21:32Z" end-time="2026-10-30 06:21:33Z" duration="0.206212" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-suite type="ParameterizedMethod" id="1030" name="GeneratedScenesPassPreflight" fullname="UnityWorkshop.Tests.AuthoringTests.GeneratedScenesPassPreflight" classname="UnityWorkshop.Tests.AuthoringTests" runstate="Runnable" testcasecount="8" result="Passed" start-time="2026-10-30 06:21:33Z" end-time="2026-10-30 06:21:34Z" duration="1.677973" total="8" passed="8" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1022" name="GeneratedScenesPassPreflight(&quot;Assets/WorkshopKit/Content/Templates/TopDown/TopDown_Starter.unity&quot;)" fullname="UnityWorkshop.Tests.AuthoringTests.GeneratedScenesPassPreflight(&quot;Assets/WorkshopKit/Content/Templates/TopDown/TopDown_Starter.unity&quot;)" methodname="GeneratedScenesPassPreflight" classname="UnityWorkshop.Tests.AuthoringTests" runstate="Runnable" seed="1515038679" result="Passed" start-time="2026-10-30 06:21:33Z" end-time="2026-10-30 06:21:33Z" duration="0.200008" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1023" name="GeneratedScenesPassPreflight(&quot;Assets/WorkshopKit/Examples/TopDown_Example.unity&quot;)" fullname="UnityWorkshop.Tests.AuthoringTests.GeneratedScenesPassPreflight(&quot;Assets/WorkshopKit/Examples/TopDown_Example.unity&quot;)" methodname="GeneratedScenesPassPreflight" classname="UnityWorkshop.Tests.AuthoringTests" runstate="Runnable" seed="1292245115" result="Passed" start-time="2026-10-30 06:21:33Z" end-time="2026-10-30 06:21:33Z" duration="0.218048" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1024" name="GeneratedScenesPassPreflight(&quot;Assets/WorkshopKit/Content/Templates/FirstPerson/FirstPerson_Starter.unity&quot;)" fullname="UnityWorkshop.Tests.AuthoringTests.GeneratedScenesPassPreflight(&quot;Assets/WorkshopKit/Content/Templates/FirstPerson/FirstPerson_Starter.unity&quot;)" methodname="GeneratedScenesPassPreflight" classname="UnityWorkshop.Tests.AuthoringTests" runstate="Runnable" seed="46992305" result="Passed" start-time="2026-10-30 06:21:33Z" end-time="2026-10-30 06:21:33Z" duration="0.203041" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1025" name="GeneratedScenesPassPreflight(&quot;Assets/WorkshopKit/Examples/FirstPerson_Example.unity&quot;)" fullname="UnityWorkshop.Tests.AuthoringTests.GeneratedScenesPassPreflight(&quot;Assets/WorkshopKit/Examples/FirstPerson_Example.unity&quot;)" methodname="GeneratedScenesPassPreflight" classname="UnityWorkshop.Tests.AuthoringTests" runstate="Runnable" seed="869576354" result="Passed" start-time="2026-10-30 06:21:33Z" end-time="2026-10-30 06:21:33Z" duration="0.213170" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1026" name="GeneratedScenesPassPreflight(&quot;Assets/WorkshopKit/Content/Templates/ThirdPerson/ThirdPerson_Starter.unity&quot;)" fullname="UnityWorkshop.Tests.AuthoringTests.GeneratedScenesPassPreflight(&quot;Assets/WorkshopKit/Content/Templates/ThirdPerson/ThirdPerson_Starter.unity&quot;)" methodname="GeneratedScenesPassPreflight" classname="UnityWorkshop.Tests.AuthoringTests" runstate="Runnable" seed="1609448628" result="Passed" start-time="2026-10-30 06:21:33Z" end-time="2026-10-30 06:21:34Z" duration="0.207679" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1027" name="GeneratedScenesPassPreflight(&quot;Assets/WorkshopKit/Examples/ThirdPerson_Example.unity&quot;)" fullname="UnityWorkshop.Tests.AuthoringTests.GeneratedScenesPassPreflight(&quot;Assets/WorkshopKit/Examples/ThirdPerson_Example.unity&quot;)" methodname="GeneratedScenesPassPreflight" classname="UnityWorkshop.Tests.AuthoringTests" runstate="Runnable" seed="1309567553" result="Passed" start-time="2026-10-30 06:21:34Z" end-time="2026-10-30 06:21:34Z" duration="0.214143" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1028" name="GeneratedScenesPassPreflight(&quot;Assets/WorkshopKit/Content/Templates/SideScroller/SideScroller_Starter.unity&quot;)" fullname="UnityWorkshop.Tests.AuthoringTests.GeneratedScenesPassPreflight(&quot;Assets/WorkshopKit/Content/Templates/SideScroller/SideScroller_Starter.unity&quot;)" methodname="GeneratedScenesPassPreflight" classname="UnityWorkshop.Tests.AuthoringTests" runstate="Runnable" seed="1938268245" result="Passed" start-time="2026-10-30 06:21:34Z" end-time="2026-10-30 06:21:34Z" duration="0.206695" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1029" name="GeneratedScenesPassPreflight(&quot;Assets/WorkshopKit/Examples/SideScroller_Example.unity&quot;)" fullname="UnityWorkshop.Tests.AuthoringTests.GeneratedScenesPassPreflight(&quot;Assets/WorkshopKit/Examples/SideScroller_Example.unity&quot;)" methodname="GeneratedScenesPassPreflight" classname="UnityWorkshop.Tests.AuthoringTests" runstate="Runnable" seed="557199908" result="Passed" start-time="2026-10-30 06:21:34Z" end-time="2026-10-30 06:21:34Z" duration="0.211648" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+            </test-suite>
+            <test-case id="1037" name="MissingSystemFixesAreIdempotent" fullname="UnityWorkshop.Tests.AuthoringTests.MissingSystemFixesAreIdempotent" methodname="MissingSystemFixesAreIdempotent" classname="UnityWorkshop.Tests.AuthoringTests" runstate="Runnable" seed="806521432" result="Passed" start-time="2026-10-30 06:21:34Z" end-time="2026-10-30 06:21:35Z" duration="0.211638" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1044" name="MoverWithoutPathAndCheckpointInHazardAreReported" fullname="UnityWorkshop.Tests.AuthoringTests.MoverWithoutPathAndCheckpointInHazardAreReported" methodname="MoverWithoutPathAndCheckpointInHazardAreReported" classname="UnityWorkshop.Tests.AuthoringTests" runstate="Runnable" seed="873412817" result="Passed" start-time="2026-10-30 06:21:35Z" end-time="2026-10-30 06:21:35Z" duration="0.210821" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1035" name="PreflightReportsAuthoringErrors" fullname="UnityWorkshop.Tests.AuthoringTests.PreflightReportsAuthoringErrors" methodname="PreflightReportsAuthoringErrors" classname="UnityWorkshop.Tests.AuthoringTests" runstate="Runnable" seed="1103062020" result="Passed" start-time="2026-10-30 06:21:35Z" end-time="2026-10-30 06:21:35Z" duration="0.198617" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1040" name="RuntimeAssemblyHasNoEditorReferences" fullname="UnityWorkshop.Tests.AuthoringTests.RuntimeAssemblyHasNoEditorReferences" methodname="RuntimeAssemblyHasNoEditorReferences" classname="UnityWorkshop.Tests.AuthoringTests" runstate="Runnable" seed="598341163" result="Passed" start-time="2026-10-30 06:21:35Z" end-time="2026-10-30 06:21:35Z" duration="0.008966" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1046" name="SharedPresetsAreNotTeamSettings" fullname="UnityWorkshop.Tests.AuthoringTests.SharedPresetsAreNotTeamSettings" methodname="SharedPresetsAreNotTeamSettings" classname="UnityWorkshop.Tests.AuthoringTests" runstate="Runnable" seed="493990974" result="Passed" start-time="2026-10-30 06:21:35Z" end-time="2026-10-30 06:21:36Z" duration="0.962838" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1038" name="SolidHazardIsReportedAndFixable" fullname="UnityWorkshop.Tests.AuthoringTests.SolidHazardIsReportedAndFixable" methodname="SolidHazardIsReportedAndFixable" classname="UnityWorkshop.Tests.AuthoringTests" runstate="Runnable" seed="1247030999" result="Passed" start-time="2026-10-30 06:21:36Z" end-time="2026-10-30 06:21:36Z" duration="0.217482" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1043" name="StartBelowFallHeightIsAnErrorWithFix" fullname="UnityWorkshop.Tests.AuthoringTests.StartBelowFallHeightIsAnErrorWithFix" methodname="StartBelowFallHeightIsAnErrorWithFix" classname="UnityWorkshop.Tests.AuthoringTests" runstate="Runnable" seed="803373271" result="Passed" start-time="2026-10-30 06:21:36Z" end-time="2026-10-30 06:21:36Z" duration="0.224156" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1034" name="TeamNameIsSanitized" fullname="UnityWorkshop.Tests.AuthoringTests.TeamNameIsSanitized" methodname="TeamNameIsSanitized" classname="UnityWorkshop.Tests.AuthoringTests" runstate="Runnable" seed="581555143" result="Passed" start-time="2026-10-30 06:21:36Z" end-time="2026-10-30 06:21:36Z" duration="0.010702" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1031" name="TemplateIsComplete" fullname="UnityWorkshop.Tests.AuthoringTests.TemplateIsComplete" methodname="TemplateIsComplete" classname="UnityWorkshop.Tests.AuthoringTests" runstate="Runnable" seed="712550072" result="Passed" start-time="2026-10-30 06:21:36Z" end-time="2026-10-30 06:21:36Z" duration="0.011067" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+          </test-suite>
+          <test-suite type="TestFixture" id="1047" name="FacilitatorTests" fullname="UnityWorkshop.Tests.FacilitatorTests" classname="UnityWorkshop.Tests.FacilitatorTests" runstate="Runnable" testcasecount="9" result="Failed" site="Child" start-time="2026-10-30 06:21:36Z" end-time="2026-10-30 06:21:43Z" duration="6.817164" total="9" passed="8" failed="1" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <failure>
+              <message><![CDATA[One or more child tests had errors]]></message>
+            </failure>
+            <test-case id="1050" name="ChangingTemplateKeepsTheLevelAndRulesAndIsUndoable" fullname="UnityWorkshop.Tests.FacilitatorTests.ChangingTemplateKeepsTheLevelAndRulesAndIsUndoable" methodname="ChangingTemplateKeepsTheLevelAndRulesAndIsUndoable" classname="UnityWorkshop.Tests.FacilitatorTests" runstate="Runnable" seed="407663404" result="Passed" start-time="2026-10-30 06:21:36Z" end-time="2026-10-30 06:21:37Z" duration="0.238367" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1051" name="ChangingToSideScrollerPreviewsOffPlanePieces" fullname="UnityWorkshop.Tests.FacilitatorTests.ChangingToSideScrollerPreviewsOffPlanePieces" methodname="ChangingToSideScrollerPreviewsOffPlanePieces" classname="UnityWorkshop.Tests.FacilitatorTests" runstate="Runnable" seed="424934698" result="Passed" start-time="2026-10-30 06:21:37Z" end-time="2026-10-30 06:21:37Z" duration="0.215445" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1053" name="CopyingAMilestoneMakesANewTeamScene" fullname="UnityWorkshop.Tests.FacilitatorTests.CopyingAMilestoneMakesANewTeamScene" methodname="CopyingAMilestoneMakesANewTeamScene" classname="UnityWorkshop.Tests.FacilitatorTests" runstate="Runnable" seed="833452379" result="Passed" start-time="2026-10-30 06:21:37Z" end-time="2026-10-30 06:21:38Z" duration="1.260424" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1054" name="CustomMovementIsATeamOwnedCopy" fullname="UnityWorkshop.Tests.FacilitatorTests.CustomMovementIsATeamOwnedCopy" methodname="CustomMovementIsATeamOwnedCopy" classname="UnityWorkshop.Tests.FacilitatorTests" runstate="Runnable" seed="1606552053" result="Passed" start-time="2026-10-30 06:21:38Z" end-time="2026-10-30 06:21:39Z" duration="1.126671" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1056" name="DragAndDropLandsOnSurfacesOrThePlayPlane" fullname="UnityWorkshop.Tests.FacilitatorTests.DragAndDropLandsOnSurfacesOrThePlayPlane" methodname="DragAndDropLandsOnSurfacesOrThePlayPlane" classname="UnityWorkshop.Tests.FacilitatorTests" runstate="Runnable" seed="1511825947" result="Failed" start-time="2026-10-30 06:21:39Z" end-time="2026-10-30 06:21:39Z" duration="0.216733" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <failure>
+                <message><![CDATA[  Lands on the floor.
+  Expected: 0.0f +/- 0.00999999978f
+  But was:  1.67000008f
+]]></message>
+                <stack-trace><![CDATA[at UnityWorkshop.Tests.FacilitatorTests.DragAndDropLandsOnSurfacesOrThePlayPlane () [0x0002a] in C:\_My Stuff\Work\Unity\Christwood-Unity-Kit\Assets\WorkshopKitDeveloper\Tests\Editor\FacilitatorTests.cs:193
+]]></stack-trace>
+              </failure>
+            </test-case>
+            <test-case id="1052" name="EveryTemplateHasFourPlayableRecoveryMilestones" fullname="UnityWorkshop.Tests.FacilitatorTests.EveryTemplateHasFourPlayableRecoveryMilestones" methodname="EveryTemplateHasFourPlayableRecoveryMilestones" classname="UnityWorkshop.Tests.FacilitatorTests" runstate="Runnable" seed="305328806" result="Passed" start-time="2026-10-30 06:21:39Z" end-time="2026-10-30 06:21:43Z" duration="3.126841" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1055" name="OverlayDescribesSelectedPieces" fullname="UnityWorkshop.Tests.FacilitatorTests.OverlayDescribesSelectedPieces" methodname="OverlayDescribesSelectedPieces" classname="UnityWorkshop.Tests.FacilitatorTests" runstate="Runnable" seed="136600031" result="Passed" start-time="2026-10-30 06:21:43Z" end-time="2026-10-30 06:21:43Z" duration="0.213045" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1049" name="RestoreRefusesAmbiguousGameSetups" fullname="UnityWorkshop.Tests.FacilitatorTests.RestoreRefusesAmbiguousGameSetups" methodname="RestoreRefusesAmbiguousGameSetups" classname="UnityWorkshop.Tests.FacilitatorTests" runstate="Runnable" seed="1058119490" result="Passed" start-time="2026-10-30 06:21:43Z" end-time="2026-10-30 06:21:43Z" duration="0.202086" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1048" name="RestoreRigReAddsMissingSystemsAndKeepsTheLevel" fullname="UnityWorkshop.Tests.FacilitatorTests.RestoreRigReAddsMissingSystemsAndKeepsTheLevel" methodname="RestoreRigReAddsMissingSystemsAndKeepsTheLevel" classname="UnityWorkshop.Tests.FacilitatorTests" runstate="Runnable" seed="373724295" result="Passed" start-time="2026-10-30 06:21:43Z" end-time="2026-10-30 06:21:43Z" duration="0.214783" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+          </test-suite>
+          <test-suite type="TestFixture" id="1057" name="FirstPersonAuthoringTests" fullname="UnityWorkshop.Tests.FirstPersonAuthoringTests" classname="UnityWorkshop.Tests.FirstPersonAuthoringTests" runstate="Runnable" testcasecount="5" result="Passed" start-time="2026-10-30 06:21:43Z" end-time="2026-10-30 06:21:44Z" duration="1.232848" total="5" passed="5" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1061" name="JumpOnlyAndTallPiecesAreFlaggedInTopDown" fullname="UnityWorkshop.Tests.FirstPersonAuthoringTests.JumpOnlyAndTallPiecesAreFlaggedInTopDown" methodname="JumpOnlyAndTallPiecesAreFlaggedInTopDown" classname="UnityWorkshop.Tests.FirstPersonAuthoringTests" runstate="Runnable" seed="852839283" result="Passed" start-time="2026-10-30 06:21:43Z" end-time="2026-10-30 06:21:43Z" duration="0.202058" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1059" name="OwnBodyIsHiddenFromTheCameraButCastsAShadow" fullname="UnityWorkshop.Tests.FirstPersonAuthoringTests.OwnBodyIsHiddenFromTheCameraButCastsAShadow" methodname="OwnBodyIsHiddenFromTheCameraButCastsAShadow" classname="UnityWorkshop.Tests.FirstPersonAuthoringTests" runstate="Runnable" seed="1894748420" result="Passed" start-time="2026-10-30 06:21:43Z" end-time="2026-10-30 06:21:43Z" duration="0.011248" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1060" name="TeamSceneFromFirstPersonTemplateIsReady" fullname="UnityWorkshop.Tests.FirstPersonAuthoringTests.TeamSceneFromFirstPersonTemplateIsReady" methodname="TeamSceneFromFirstPersonTemplateIsReady" classname="UnityWorkshop.Tests.FirstPersonAuthoringTests" runstate="Runnable" seed="1145168344" result="Passed" start-time="2026-10-30 06:21:43Z" end-time="2026-10-30 06:21:44Z" duration="0.797049" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1058" name="TemplateIsComplete" fullname="UnityWorkshop.Tests.FirstPersonAuthoringTests.TemplateIsComplete" methodname="TemplateIsComplete" classname="UnityWorkshop.Tests.FirstPersonAuthoringTests" runstate="Runnable" seed="819519858" result="Passed" start-time="2026-10-30 06:21:44Z" end-time="2026-10-30 06:21:44Z" duration="0.010896" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1062" name="TheSamePiecesSuitFirstPerson" fullname="UnityWorkshop.Tests.FirstPersonAuthoringTests.TheSamePiecesSuitFirstPerson" methodname="TheSamePiecesSuitFirstPerson" classname="UnityWorkshop.Tests.FirstPersonAuthoringTests" runstate="Runnable" seed="2141213884" result="Passed" start-time="2026-10-30 06:21:44Z" end-time="2026-10-30 06:21:44Z" duration="0.197427" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+          </test-suite>
+          <test-suite type="TestFixture" id="1063" name="PlaySessionTests" fullname="UnityWorkshop.Tests.PlaySessionTests" classname="UnityWorkshop.Tests.PlaySessionTests" runstate="Runnable" testcasecount="1" result="Passed" start-time="2026-10-30 06:21:44Z" end-time="2026-10-30 06:21:47Z" duration="2.442383" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1064" name="RepeatedPlaySessionsStartClean" fullname="UnityWorkshop.Tests.PlaySessionTests.RepeatedPlaySessionsStartClean" methodname="RepeatedPlaySessionsStartClean" classname="UnityWorkshop.Tests.PlaySessionTests" runstate="Runnable" seed="779543177" result="Passed" start-time="2026-10-30 06:21:45Z" end-time="2026-10-30 06:21:47Z" duration="2.362656" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+          </test-suite>
+          <test-suite type="TestFixture" id="1065" name="SessionTests" fullname="UnityWorkshop.Tests.SessionTests" classname="UnityWorkshop.Tests.SessionTests" runstate="Runnable" testcasecount="19" result="Passed" start-time="2026-10-30 06:21:47Z" end-time="2026-10-30 06:21:47Z" duration="0.007490" total="19" passed="19" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1083" name="ChannelsIgnoreActionsOutsidePlay" fullname="UnityWorkshop.Tests.SessionTests.ChannelsIgnoreActionsOutsidePlay" methodname="ChannelsIgnoreActionsOutsidePlay" classname="UnityWorkshop.Tests.SessionTests" runstate="Runnable" seed="342238284" result="Passed" start-time="2026-10-30 06:21:47Z" end-time="2026-10-30 06:21:47Z" duration="0.000678" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1067" name="CollectAllBlocksGoalUntilEverythingIsCollected" fullname="UnityWorkshop.Tests.SessionTests.CollectAllBlocksGoalUntilEverythingIsCollected" methodname="CollectAllBlocksGoalUntilEverythingIsCollected" classname="UnityWorkshop.Tests.SessionTests" runstate="Runnable" seed="223289238" result="Passed" start-time="2026-10-30 06:21:47Z" end-time="2026-10-30 06:21:47Z" duration="0.000459" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1066" name="CollectCountsEachItemOnce" fullname="UnityWorkshop.Tests.SessionTests.CollectCountsEachItemOnce" methodname="CollectCountsEachItemOnce" classname="UnityWorkshop.Tests.SessionTests" runstate="Runnable" seed="1755166008" result="Passed" start-time="2026-10-30 06:21:47Z" end-time="2026-10-30 06:21:47Z" duration="0.000336" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1076" name="ExpiredTimerBeatsSimultaneousGoal" fullname="UnityWorkshop.Tests.SessionTests.ExpiredTimerBeatsSimultaneousGoal" methodname="ExpiredTimerBeatsSimultaneousGoal" classname="UnityWorkshop.Tests.SessionTests" runstate="Runnable" seed="1851663909" result="Passed" start-time="2026-10-30 06:21:47Z" end-time="2026-10-30 06:21:47Z" duration="0.000381" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1084" name="FallRespawnIgnoresHazardProtection" fullname="UnityWorkshop.Tests.SessionTests.FallRespawnIgnoresHazardProtection" methodname="FallRespawnIgnoresHazardProtection" classname="UnityWorkshop.Tests.SessionTests" runstate="Runnable" seed="205166699" result="Passed" start-time="2026-10-30 06:21:47Z" end-time="2026-10-30 06:21:47Z" duration="0.000220" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1080" name="KeysOpenOnlyTheirOwnChannel" fullname="UnityWorkshop.Tests.SessionTests.KeysOpenOnlyTheirOwnChannel" methodname="KeysOpenOnlyTheirOwnChannel" classname="UnityWorkshop.Tests.SessionTests" runstate="Runnable" seed="733431364" result="Passed" start-time="2026-10-30 06:21:47Z" end-time="2026-10-30 06:21:47Z" duration="0.000310" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1082" name="LatchAndKeyKeepTheChannelOpen" fullname="UnityWorkshop.Tests.SessionTests.LatchAndKeyKeepTheChannelOpen" methodname="LatchAndKeyKeepTheChannelOpen" classname="UnityWorkshop.Tests.SessionTests" runstate="Runnable" seed="889086767" result="Passed" start-time="2026-10-30 06:21:47Z" end-time="2026-10-30 06:21:47Z" duration="0.000173" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1078" name="NoTimerNeverExpires" fullname="UnityWorkshop.Tests.SessionTests.NoTimerNeverExpires" methodname="NoTimerNeverExpires" classname="UnityWorkshop.Tests.SessionTests" runstate="Runnable" seed="2065702352" result="Passed" start-time="2026-10-30 06:21:47Z" end-time="2026-10-30 06:21:47Z" duration="0.000139" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1072" name="PauseRestoresThePausedState" fullname="UnityWorkshop.Tests.SessionTests.PauseRestoresThePausedState" methodname="PauseRestoresThePausedState" classname="UnityWorkshop.Tests.SessionTests" runstate="Runnable" seed="1527936881" result="Passed" start-time="2026-10-30 06:21:47Z" end-time="2026-10-30 06:21:47Z" duration="0.000240" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1068" name="ReachExitWinsImmediately" fullname="UnityWorkshop.Tests.SessionTests.ReachExitWinsImmediately" methodname="ReachExitWinsImmediately" classname="UnityWorkshop.Tests.SessionTests" runstate="Runnable" seed="114905772" result="Passed" start-time="2026-10-30 06:21:47Z" end-time="2026-10-30 06:21:47Z" duration="0.000107" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1074" name="ReadyRejectsGameplayUntilBegin" fullname="UnityWorkshop.Tests.SessionTests.ReadyRejectsGameplayUntilBegin" methodname="ReadyRejectsGameplayUntilBegin" classname="UnityWorkshop.Tests.SessionTests" runstate="Runnable" seed="2054977455" result="Passed" start-time="2026-10-30 06:21:47Z" end-time="2026-10-30 06:21:47Z" duration="0.000153" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1071" name="RespawnKeepsCollectionAndClock" fullname="UnityWorkshop.Tests.SessionTests.RespawnKeepsCollectionAndClock" methodname="RespawnKeepsCollectionAndClock" classname="UnityWorkshop.Tests.SessionTests" runstate="Runnable" seed="1838604033" result="Passed" start-time="2026-10-30 06:21:47Z" end-time="2026-10-30 06:21:47Z" duration="0.000176" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1070" name="RespawnRunsThenProtectsThenEnds" fullname="UnityWorkshop.Tests.SessionTests.RespawnRunsThenProtectsThenEnds" methodname="RespawnRunsThenProtectsThenEnds" classname="UnityWorkshop.Tests.SessionTests" runstate="Runnable" seed="1428096780" result="Passed" start-time="2026-10-30 06:21:47Z" end-time="2026-10-30 06:21:47Z" duration="0.000365" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1073" name="ShutdownStopsAllEvents" fullname="UnityWorkshop.Tests.SessionTests.ShutdownStopsAllEvents" methodname="ShutdownStopsAllEvents" classname="UnityWorkshop.Tests.SessionTests" runstate="Runnable" seed="2105516047" result="Passed" start-time="2026-10-30 06:21:47Z" end-time="2026-10-30 06:21:47Z" duration="0.000287" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1081" name="SwitchesCombineWithOr" fullname="UnityWorkshop.Tests.SessionTests.SwitchesCombineWithOr" methodname="SwitchesCombineWithOr" classname="UnityWorkshop.Tests.SessionTests" runstate="Runnable" seed="1340288246" result="Passed" start-time="2026-10-30 06:21:47Z" end-time="2026-10-30 06:21:47Z" duration="0.000381" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1069" name="TerminalStateRejectsFurtherActions" fullname="UnityWorkshop.Tests.SessionTests.TerminalStateRejectsFurtherActions" methodname="TerminalStateRejectsFurtherActions" classname="UnityWorkshop.Tests.SessionTests" runstate="Runnable" seed="471041860" result="Passed" start-time="2026-10-30 06:21:47Z" end-time="2026-10-30 06:21:47Z" duration="0.000307" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1075" name="TimerExpiryLosesOnce" fullname="UnityWorkshop.Tests.SessionTests.TimerExpiryLosesOnce" methodname="TimerExpiryLosesOnce" classname="UnityWorkshop.Tests.SessionTests" runstate="Runnable" seed="1317226680" result="Passed" start-time="2026-10-30 06:21:47Z" end-time="2026-10-30 06:21:47Z" duration="0.000315" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1077" name="TimerPausesAndKeepsRunningDuringRespawn" fullname="UnityWorkshop.Tests.SessionTests.TimerPausesAndKeepsRunningDuringRespawn" methodname="TimerPausesAndKeepsRunningDuringRespawn" classname="UnityWorkshop.Tests.SessionTests" runstate="Runnable" seed="630903029" result="Passed" start-time="2026-10-30 06:21:47Z" end-time="2026-10-30 06:21:47Z" duration="0.000148" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1079" name="TimerPresetsShowRealSeconds" fullname="UnityWorkshop.Tests.SessionTests.TimerPresetsShowRealSeconds" methodname="TimerPresetsShowRealSeconds" classname="UnityWorkshop.Tests.SessionTests" runstate="Runnable" seed="1728880851" result="Passed" start-time="2026-10-30 06:21:47Z" end-time="2026-10-30 06:21:47Z" duration="0.000123" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+          </test-suite>
+          <test-suite type="TestFixture" id="1085" name="SideScrollerAuthoringTests" fullname="UnityWorkshop.Tests.SideScrollerAuthoringTests" classname="UnityWorkshop.Tests.SideScrollerAuthoringTests" runstate="Runnable" testcasecount="5" result="Passed" start-time="2026-10-30 06:21:47Z" end-time="2026-10-30 06:21:49Z" duration="1.791927" total="5" passed="5" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1088" name="BuilderPlacementSnapsToThePlaneAndTurnsDoors" fullname="UnityWorkshop.Tests.SideScrollerAuthoringTests.BuilderPlacementSnapsToThePlaneAndTurnsDoors" methodname="BuilderPlacementSnapsToThePlaneAndTurnsDoors" classname="UnityWorkshop.Tests.SideScrollerAuthoringTests" runstate="Runnable" seed="2022329008" result="Passed" start-time="2026-10-30 06:21:47Z" end-time="2026-10-30 06:21:47Z" duration="0.389896" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1087" name="EveryGameplayPieceInTheGeneratedScenesIsOnThePlane" fullname="UnityWorkshop.Tests.SideScrollerAuthoringTests.EveryGameplayPieceInTheGeneratedScenesIsOnThePlane" methodname="EveryGameplayPieceInTheGeneratedScenesIsOnThePlane" classname="UnityWorkshop.Tests.SideScrollerAuthoringTests" runstate="Runnable" seed="1939152225" result="Passed" start-time="2026-10-30 06:21:47Z" end-time="2026-10-30 06:21:48Z" duration="0.385989" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1089" name="OffPlanePiecesAndPathsAreReportedAndFixed" fullname="UnityWorkshop.Tests.SideScrollerAuthoringTests.OffPlanePiecesAndPathsAreReportedAndFixed" methodname="OffPlanePiecesAndPathsAreReportedAndFixed" classname="UnityWorkshop.Tests.SideScrollerAuthoringTests" runstate="Runnable" seed="1287128894" result="Passed" start-time="2026-10-30 06:21:48Z" end-time="2026-10-30 06:21:48Z" duration="0.215694" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1090" name="TeamSceneFromSideScrollerTemplateIsReady" fullname="UnityWorkshop.Tests.SideScrollerAuthoringTests.TeamSceneFromSideScrollerTemplateIsReady" methodname="TeamSceneFromSideScrollerTemplateIsReady" classname="UnityWorkshop.Tests.SideScrollerAuthoringTests" runstate="Runnable" seed="1619052007" result="Passed" start-time="2026-10-30 06:21:48Z" end-time="2026-10-30 06:21:49Z" duration="0.786737" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1086" name="TemplateIsComplete" fullname="UnityWorkshop.Tests.SideScrollerAuthoringTests.TemplateIsComplete" methodname="TemplateIsComplete" classname="UnityWorkshop.Tests.SideScrollerAuthoringTests" runstate="Runnable" seed="763362978" result="Passed" start-time="2026-10-30 06:21:49Z" end-time="2026-10-30 06:21:49Z" duration="0.012417" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+          </test-suite>
+          <test-suite type="TestFixture" id="1091" name="ThirdPersonAuthoringTests" fullname="UnityWorkshop.Tests.ThirdPersonAuthoringTests" classname="UnityWorkshop.Tests.ThirdPersonAuthoringTests" runstate="Runnable" testcasecount="4" result="Passed" start-time="2026-10-30 06:21:49Z" end-time="2026-10-30 06:21:50Z" duration="1.212787" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1094" name="CompetingMotionInAModelIsReported" fullname="UnityWorkshop.Tests.ThirdPersonAuthoringTests.CompetingMotionInAModelIsReported" methodname="CompetingMotionInAModelIsReported" classname="UnityWorkshop.Tests.ThirdPersonAuthoringTests" runstate="Runnable" seed="2104244629" result="Passed" start-time="2026-10-30 06:21:49Z" end-time="2026-10-30 06:21:49Z" duration="0.202557" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1093" name="EditorPreviewPullsTheCameraInFrontOfWalls" fullname="UnityWorkshop.Tests.ThirdPersonAuthoringTests.EditorPreviewPullsTheCameraInFrontOfWalls" methodname="EditorPreviewPullsTheCameraInFrontOfWalls" classname="UnityWorkshop.Tests.ThirdPersonAuthoringTests" runstate="Runnable" seed="939379806" result="Passed" start-time="2026-10-30 06:21:49Z" end-time="2026-10-30 06:21:49Z" duration="0.206222" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1095" name="TeamSceneFromThirdPersonTemplateIsReady" fullname="UnityWorkshop.Tests.ThirdPersonAuthoringTests.TeamSceneFromThirdPersonTemplateIsReady" methodname="TeamSceneFromThirdPersonTemplateIsReady" classname="UnityWorkshop.Tests.ThirdPersonAuthoringTests" runstate="Runnable" seed="1676805553" result="Passed" start-time="2026-10-30 06:21:49Z" end-time="2026-10-30 06:21:50Z" duration="0.788096" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1092" name="TemplateIsComplete" fullname="UnityWorkshop.Tests.ThirdPersonAuthoringTests.TemplateIsComplete" methodname="TemplateIsComplete" classname="UnityWorkshop.Tests.ThirdPersonAuthoringTests" runstate="Runnable" seed="63903147" result="Passed" start-time="2026-10-30 06:21:50Z" end-time="2026-10-30 06:21:50Z" duration="0.012926" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[Saving results to: C:/Users/toxic/AppData/LocalLow/DefaultCompany/Christwood-Unity-Kit\TestResults.xml
+]]></output>
+            </test-case>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>
