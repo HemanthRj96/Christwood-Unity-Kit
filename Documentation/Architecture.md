@@ -32,6 +32,8 @@ Features are organised by folder, not by assembly.
 | `ThirdPersonCameraRig` | Orbit around a pivot above the player, with clamped tilt and distance presets. A sphere-probe collision check moves the camera in at once and back out smoothly. `PlaceBehind` resets the orbit and is shared with the editor preview. |
 | `PlayerVisualAdapter` | Places the visual model and optionally feeds an Animator `Speed`, `Grounded` and `VerticalSpeed`. Root motion is always off. Preflight reports competing controllers, physics bodies and root motion inside the Player. |
 | `SideScrollerCameraRig` | Defines the play plane (`TryGetMovementPlane`), follows sideways with a calm vertical zone, and clamps its aim to authored bounds. `PlayerMotor.LockDepth` keeps the player on the plane, Builder placement snaps pieces to it, and preflight reports off-plane pieces and paths. |
+| `AdoptedAsset` + `WorkshopAssetAdoption` (editor) | Owned wrapper around a vendor model, held as a nested prefab reference so vendor files are never edited. Conflicts are disabled in the copy; built-in materials get owned URP copies; a failed adoption deletes only the folder it created. |
+| `WorkshopRigTools` (editor) | Plan, then apply, a rig restore or template change: system objects only, the level and rules are kept, one Undo step. Also lists recovery milestones. |
 | `PieceTraits` | Marks pieces that need jumping or block an overhead view. Drives catalog filtering and preflight suitability warnings. |
 | `WorkshopHUD` | Event-driven UI: title, objective, controls, progress, countdown, held keys, goal and checkpoint messages, pause, results and setup errors. |
 | `Checkpoint` | Becomes the context's respawn pose on contact while playing; one active at a time. |

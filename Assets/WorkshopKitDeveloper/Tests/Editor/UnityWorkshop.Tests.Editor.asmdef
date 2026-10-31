@@ -4,6 +4,7 @@
     "references": [
         "UnityWorkshop.Runtime",
         "UnityWorkshop.Editor",
+        "UnityWorkshop.Tests.PlayMode",
         "UnityEngine.TestRunner",
         "UnityEditor.TestRunner"
     ],

@@ -23,6 +23,7 @@ namespace UnityWorkshop.Tests
         const string TestTeam = "ZZ_AutomatedAdoption";
 
         VendorFixture m_Vendor;
+        (bool enabled, EnterPlayModeOptions options)? m_SavedPlayModeOptions;
         EditorBuildSettingsScene[] m_BuildScenes;
 
         [SetUp]
@@ -35,6 +36,12 @@ namespace UnityWorkshop.Tests
         [TearDown]
         public void TearDown()
         {
+            if (m_SavedPlayModeOptions.HasValue)
+            {
+                EditorSettings.enterPlayModeOptionsEnabled = m_SavedPlayModeOptions.Value.enabled;
+                EditorSettings.enterPlayModeOptions = m_SavedPlayModeOptions.Value.options;
+                m_SavedPlayModeOptions = null;
+            }
             if (!Application.isPlaying)
                 EditorSceneManager.NewScene(NewSceneSetup.EmptyScene, NewSceneMode.Single);
             m_Vendor.Dispose();
@@ -43,6 +50,9 @@ namespace UnityWorkshop.Tests
                 AssetDatabase.DeleteAsset(team);
             EditorBuildSettings.scenes = m_BuildScenes;
         }
+
+        /// <summary>Loads an adopted look by path. Call it after opening a scene, which unloads assets held only in code.</summary>
+        static AdoptedAsset LoadLook(string path) => AssetDatabase.LoadAssetAtPath<GameObject>(path).GetComponent<AdoptedAsset>();
 
         static AdoptionResult Adopt(GameObject source, AdoptedRole role, AdoptionSize size = AdoptionSize.Keep)
         {
@@ -100,7 +110,8 @@ namespace UnityWorkshop.Tests
                 Assert.That(material, Is.Not.EqualTo(m_Vendor.CrateMaterial));
                 Assert.That(material.shader.name, Is.EqualTo("Universal Render Pipeline/Lit"));
                 Assert.That(AssetDatabase.GetAssetPath(material), Does.StartWith(WorkshopPaths.AdoptedAssets + "/Vendor Crate/Materials/"));
-                Assert.That(material.GetColor("_BaseColor"), Is.EqualTo(new Color(0.8f, 0.2f, 0.1f)));
+                var baseColor = material.GetColor("_BaseColor");
+                Assert.That(new[] { baseColor.r, baseColor.g, baseColor.b }, Is.EqualTo(new[] { 0.8f, 0.2f, 0.1f }).Within(0.001f));
                 Assert.That(material.GetFloat("_Smoothness"), Is.EqualTo(0.7f).Within(0.001f));
                 Assert.That(material.GetFloat("_AlphaClip"), Is.EqualTo(1f), "Cut-out is carried over.");
             }
@@ -190,6 +201,7 @@ namespace UnityWorkshop.Tests
             var scene = EditorSceneManager.OpenScene(ThirdPersonStarterPath, OpenSceneMode.Single);
             var player = WorkshopSceneQuery.FindActive<WorkshopPlayer>(scene).Single();
             var original = player.transform.Find("Visual");
+            look = LoadLook(result.PrefabPath); // opening a scene unloads assets held only in code
             var instance = WorkshopAssetAdoption.ApplyPlayerLook(player, look);
 
             Assert.That(original.gameObject.activeSelf, Is.False);
@@ -209,10 +221,10 @@ namespace UnityWorkshop.Tests
         [Test]
         public void PlayerLookIsUndoableAndHiddenFromAFirstPersonCamera()
         {
-            var look = AssetDatabase.LoadAssetAtPath<GameObject>(Adopt(m_Vendor.Robot, AdoptedRole.PlayerLook).PrefabPath).GetComponent<AdoptedAsset>();
+            var lookPath = Adopt(m_Vendor.Robot, AdoptedRole.PlayerLook).PrefabPath;
             var scene = EditorSceneManager.OpenScene(FirstPersonStarterPath, OpenSceneMode.Single);
             var player = WorkshopSceneQuery.FindActive<WorkshopPlayer>(scene).Single();
-            var instance = WorkshopAssetAdoption.ApplyPlayerLook(player, look);
+            var instance = WorkshopAssetAdoption.ApplyPlayerLook(player, LoadLook(lookPath));
             Assert.That(instance.GetComponentsInChildren<Renderer>().All(r => r.shadowCastingMode == ShadowCastingMode.ShadowsOnly), Is.True);
 
             Undo.PerformUndo();
@@ -223,9 +235,9 @@ namespace UnityWorkshop.Tests
         [Test]
         public void AdoptedLookSurvivesAChangeOfTemplate()
         {
-            var look = AssetDatabase.LoadAssetAtPath<GameObject>(Adopt(m_Vendor.Robot, AdoptedRole.PlayerLook).PrefabPath).GetComponent<AdoptedAsset>();
+            var lookPath = Adopt(m_Vendor.Robot, AdoptedRole.PlayerLook).PrefabPath;
             var scene = EditorSceneManager.OpenScene(ThirdPersonStarterPath, OpenSceneMode.Single);
-            WorkshopAssetAdoption.ApplyPlayerLook(WorkshopSceneQuery.FindActive<WorkshopPlayer>(scene).Single(), look);
+            WorkshopAssetAdoption.ApplyPlayerLook(WorkshopSceneQuery.FindActive<WorkshopPlayer>(scene).Single(), LoadLook(lookPath));
 
             var sideScroller = AssetDatabase.LoadAssetAtPath<GameTemplateDefinition>("Assets/WorkshopKit/Content/Templates/SideScroller/Side-Scroller Template.asset");
             WorkshopRigTools.Apply(scene, sideScroller);
@@ -255,36 +267,26 @@ namespace UnityWorkshop.Tests
         [UnityTest]
         public IEnumerator AdoptedLookPlaysWithTheWorkshopMotor()
         {
-            var look = AssetDatabase.LoadAssetAtPath<GameObject>(Adopt(m_Vendor.Robot, AdoptedRole.PlayerLook).PrefabPath).GetComponent<AdoptedAsset>();
+            var lookPath = Adopt(m_Vendor.Robot, AdoptedRole.PlayerLook).PrefabPath;
             var template = AssetDatabase.LoadAssetAtPath<GameTemplateDefinition>("Assets/WorkshopKit/Content/Templates/ThirdPerson/Third-Person Template.asset");
             var path = TeamSceneFactory.Create(TestTeam, "Robot Run", "Run!", template, out var error);
             Assert.That(path, Is.Not.Null, error);
             var scene = EditorSceneManager.OpenScene(path, OpenSceneMode.Single);
-            WorkshopAssetAdoption.ApplyPlayerLook(WorkshopSceneQuery.FindActive<WorkshopPlayer>(scene).Single(), look);
+            WorkshopAssetAdoption.ApplyPlayerLook(WorkshopSceneQuery.FindActive<WorkshopPlayer>(scene).Single(), LoadLook(lookPath));
             EditorSceneManager.SaveScene(scene);
 
-            // Keep this test's fixture alive across Play mode: no domain reload while it runs.
-            var optionsEnabled = EditorSettings.enterPlayModeOptionsEnabled;
-            var options = EditorSettings.enterPlayModeOptions;
+            // Keep this test's fixture alive across Play mode: no domain or scene reload while it runs (the same
+            // options the repeated-Play-session test uses). TearDown restores them even if an assertion fails.
+            m_SavedPlayModeOptions = (EditorSettings.enterPlayModeOptionsEnabled, EditorSettings.enterPlayModeOptions);
             EditorSettings.enterPlayModeOptionsEnabled = true;
-            EditorSettings.enterPlayModeOptions = EnterPlayModeOptions.DisableDomainReload;
-            try
-            {
-                yield return PlayAndCheck();
-            }
-            finally
-            {
-                EditorSettings.enterPlayModeOptionsEnabled = optionsEnabled;
-                EditorSettings.enterPlayModeOptions = options;
-            }
-        }
+            EditorSettings.enterPlayModeOptions = EnterPlayModeOptions.DisableDomainReload | EnterPlayModeOptions.DisableSceneReload;
 
-        static IEnumerator PlayAndCheck()
-        {
+            // EnterPlayMode is only honoured when yielded directly by the test, not from a nested routine.
             yield return new EnterPlayMode();
             WorkshopGameContext context = null;
             var until = Time.realtimeSinceStartup + 10f;
-            while ((context == null || context.Session.State != GameState.Playing) && Time.realtimeSinceStartup < until)
+            // Right after entering Play mode the Game Setup can be found before its Awake has created the session.
+            while ((context == null || context.Session == null || context.Session.State != GameState.Playing) && Time.realtimeSinceStartup < until)
             {
                 context = Object.FindObjectsByType<WorkshopGameContext>().FirstOrDefault();
                 yield return null;

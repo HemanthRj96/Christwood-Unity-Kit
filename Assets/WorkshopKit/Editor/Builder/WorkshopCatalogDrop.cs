@@ -37,8 +37,13 @@ namespace UnityWorkshop
             Physics.SyncTransforms();
             if (WorkshopSceneQuery.TryGetMovementPlane(scene, out var depth) && new Plane(Vector3.back, new Vector3(0f, 0f, depth)).Raycast(ray, out var planeDistance))
                 return ray.GetPoint(planeDistance);
-            if (Physics.Raycast(ray, out var hit, 1000f, ~0, QueryTriggerInteraction.Ignore))
-                return hit.point;
+            // The nearest solid surface, ignoring the player (pieces dropped on the Start Point go on the floor).
+            var nearest = float.PositiveInfinity;
+            foreach (var hit in Physics.RaycastAll(ray, 1000f, ~0, QueryTriggerInteraction.Ignore))
+                if (hit.distance < nearest && hit.collider.GetComponentInParent<WorkshopPlayer>() == null)
+                    nearest = hit.distance;
+            if (!float.IsPositiveInfinity(nearest))
+                return ray.GetPoint(nearest);
             if (new Plane(Vector3.up, Vector3.zero).Raycast(ray, out var groundDistance))
                 return ray.GetPoint(groundDistance);
             return ray.GetPoint(10f);

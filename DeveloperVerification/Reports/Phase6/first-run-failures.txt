@@ -1,0 +1,35 @@
+TEST AdoptedLookPlaysWithTheWorkshopMotor
+                <message><![CDATA[UnityEngine.MissingReferenceException : The object of type 'UnityWorkshop.AdoptedAsset' has been destroyed but you are still trying to access it.
+                <stack-trace><![CDATA[  at UnityEngine.Object+MarshalledUnityObject.TryThrowEditorNullExceptionObject (UnityEngine.Object unityObj, System.String parameterName) [0x00065] in <0ce87f9710ab4aa994e7b9ccfb3ea0fb>:0 
+  at UnityWorkshop.WorkshopAssetAdoption.ApplyPlayerLook (UnityWorkshop.WorkshopPlayer player, UnityWorkshop.AdoptedAsset look) [0x000a2] in C:\_My Stuff\Work\Unity\Christwood-Unity-Kit\Assets\WorkshopKit\Editor\Adoption\WorkshopAssetAdoption.cs:571 
+TEST AdoptedLookSurvivesAChangeOfTemplate
+                <message><![CDATA[UnityEngine.MissingReferenceException : The object of type 'UnityWorkshop.AdoptedAsset' has been destroyed but you are still trying to access it.
+                <stack-trace><![CDATA[  at UnityEngine.Object+MarshalledUnityObject.TryThrowEditorNullExceptionObject (UnityEngine.Object unityObj, System.String parameterName) [0x00065] in <0ce87f9710ab4aa994e7b9ccfb3ea0fb>:0 
+  at UnityWorkshop.WorkshopAssetAdoption.ApplyPlayerLook (UnityWorkshop.WorkshopPlayer player, UnityWorkshop.AdoptedAsset look) [0x000a2] in C:\_My Stuff\Work\Unity\Christwood-Unity-Kit\Assets\WorkshopKit\Editor\Adoption\WorkshopAssetAdoption.cs:571 
+  at UnityWorkshop.Tests.AdoptionTests.AdoptedLookSurvivesAChangeOfTemplate () [0x0002d] in C:\_My Stuff\Work\Unity\Christwood-Unity-Kit\Assets\WorkshopKitDeveloper\Tests\Editor\AdoptionTests.cs:228 
+TEST AdoptedPropIsAnOwnedWrapperAndVendorFilesAreUntouched
+                <message><![CDATA[  Expected: RGBA(0.800, 0.200, 0.100, 1.000)
+                <stack-trace><![CDATA[at UnityWorkshop.Tests.AdoptionTests.AdoptedPropIsAnOwnedWrapperAndVendorFilesAreUntouched () [0x002ed] in C:\_My Stuff\Work\Unity\Christwood-Unity-Kit\Assets\WorkshopKitDeveloper\Tests\Editor\AdoptionTests.cs:103
+              <output><![CDATA[Can't add script behaviour 'VendorSpinner' because it is an editor script. To attach a script it needs to be outside the 'Editor' folder.
+TEST AnalysisDetectsConflictsAndMaterials
+                <message><![CDATA[  VendorSpinner
+                <stack-trace><![CDATA[at UnityWorkshop.Tests.AdoptionTests.AnalysisDetectsConflictsAndMaterials () [0x00080] in C:\_My Stuff\Work\Unity\Christwood-Unity-Kit\Assets\WorkshopKitDeveloper\Tests\Editor\AdoptionTests.cs:61
+TEST ConflictingPartsAreTurnedOffOnlyInTheOwnedCopy
+                <message><![CDATA[System.NullReferenceException : Object reference not set to an instance of an object]]></message>
+                <stack-trace><![CDATA[  at UnityWorkshop.Tests.AdoptionTests.ConflictingPartsAreTurnedOffOnlyInTheOwnedCopy () [0x001eb] in C:\_My Stuff\Work\Unity\Christwood-Unity-Kit\Assets\WorkshopKitDeveloper\Tests\Editor\AdoptionTests.cs:143 
+              <output><![CDATA[Can't add script behaviour 'VendorSpinner' because it is an editor script. To attach a script it needs to be outside the 'Editor' folder.
+TEST PlayerLookIsUndoableAndHiddenFromAFirstPersonCamera
+                <message><![CDATA[UnityEngine.MissingReferenceException : The object of type 'UnityWorkshop.AdoptedAsset' has been destroyed but you are still trying to access it.
+                <stack-trace><![CDATA[  at UnityEngine.Object+MarshalledUnityObject.TryThrowEditorNullExceptionObject (UnityEngine.Object unityObj, System.String parameterName) [0x00065] in <0ce87f9710ab4aa994e7b9ccfb3ea0fb>:0 
+  at UnityWorkshop.WorkshopAssetAdoption.ApplyPlayerLook (UnityWorkshop.WorkshopPlayer player, UnityWorkshop.AdoptedAsset look) [0x000a2] in C:\_My Stuff\Work\Unity\Christwood-Unity-Kit\Assets\WorkshopKit\Editor\Adoption\WorkshopAssetAdoption.cs:571 
+  at UnityWorkshop.Tests.AdoptionTests.PlayerLookIsUndoableAndHiddenFromAFirstPersonCamera () [0x00037] in C:\_My Stuff\Work\Unity\Christwood-Unity-Kit\Assets\WorkshopKitDeveloper\Tests\Editor\AdoptionTests.cs:215 
+TEST PlayerLookReplacesTheModelWithoutCompetingMotion
+                <message><![CDATA[UnityEngine.MissingReferenceException : The object of type 'UnityWorkshop.AdoptedAsset' has been destroyed but you are still trying to access it.
+                <stack-trace><![CDATA[  at UnityEngine.Object+MarshalledUnityObject.TryThrowEditorNullExceptionObject (UnityEngine.Object unityObj, System.String parameterName) [0x00065] in <0ce87f9710ab4aa994e7b9ccfb3ea0fb>:0 
+  at UnityWorkshop.WorkshopAssetAdoption.ApplyPlayerLook (UnityWorkshop.WorkshopPlayer player, UnityWorkshop.AdoptedAsset look) [0x000a2] in C:\_My Stuff\Work\Unity\Christwood-Unity-Kit\Assets\WorkshopKit\Editor\Adoption\WorkshopAssetAdoption.cs:571 
+  at UnityWorkshop.Tests.AdoptionTests.PlayerLookReplacesTheModelWithoutCompetingMotion () [0x000fe] in C:\_My Stuff\Work\Unity\Christwood-Unity-Kit\Assets\WorkshopKitDeveloper\Tests\Editor\AdoptionTests.cs:193 
+TEST ChangingTemplateKeepsTheLevelAndRulesAndIsUndoable
+TEST ChangingToSideScrollerPreviewsOffPlanePieces
+TEST DragAndDropLandsOnSurfacesOrThePlayPlane
+                <message><![CDATA[  Lands on the floor.
+                <stack-trace><![CDATA[at UnityWorkshop.Tests.FacilitatorTests.DragAndDropLandsOnSurfacesOrThePlayPlane () [0x0002a] in C:\_My Stuff\Work\Unity\Christwood-Unity-Kit\Assets\WorkshopKitDeveloper\Tests\Editor\FacilitatorTests.cs:193

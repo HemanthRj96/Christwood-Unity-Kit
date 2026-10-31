@@ -1,0 +1,124 @@
+Assets/WorkshopKit/Content/Audio.meta:guid: 9df9f1434166bbd418f3cb4b28d6da8b
+Assets/WorkshopKit/Content/Audio/Blocked.wav.meta:guid: 2d83a52d76badd445b04f64ee7ba4a8d
+Assets/WorkshopKit/Content/Audio/Checkpoint.wav.meta:guid: 63818063a2008ea40ad5755e7f5a40af
+Assets/WorkshopKit/Content/Audio/Door.wav.meta:guid: 1c4d7036f9f59bf47a5cf4d0b99bc0b0
+Assets/WorkshopKit/Content/Audio/Key.wav.meta:guid: 46503addbfead1d409df67d760ab9118
+Assets/WorkshopKit/Content/Audio/Lose.wav.meta:guid: 088d15f1b321dc547911e8ac407d33aa
+Assets/WorkshopKit/Content/Audio/Pickup.wav.meta:guid: 105deefc4857c434bae22643fcb5adf0
+Assets/WorkshopKit/Content/Audio/Respawn.wav.meta:guid: d722eac46743de4429d3b832a1f68822
+Assets/WorkshopKit/Content/Audio/Switch.wav.meta:guid: f465bfec47157304b816445e53017fac
+Assets/WorkshopKit/Content/Audio/Win.wav.meta:guid: 79a6ae2867d96124489e8516c63a1fcc
+Assets/WorkshopKit/Content/Configuration.meta:guid: 0d133be05b03be54da2e03ee5c0d5e8c
+Assets/WorkshopKit/Content/Configuration/Channel Style.asset.meta:guid: 2f073083e5a0cac4189bc0e64130ef24
+Assets/WorkshopKit/Content/Configuration/Movement Calm.asset.meta:guid: 8c24a05a813198840981fc84226af3fd
+Assets/WorkshopKit/Content/Configuration/Movement Speedy.asset.meta:guid: 90a73b4782661924eb1a6f75db2355eb
+Assets/WorkshopKit/Content/Configuration/Movement Standard.asset.meta:guid: 674908d148fdd594ca5990faedd16fea
+Assets/WorkshopKit/Content/Configuration/Symbol Circle.asset.meta:guid: 96811bf1a7f16d246b9d8f2d2373bf8f
+Assets/WorkshopKit/Content/Configuration/Symbol Diamond.asset.meta:guid: a6cbd38cf3a1f554f84079a83ef970cd
+Assets/WorkshopKit/Content/Configuration/Symbol Square.asset.meta:guid: 4dd4be9a7dd793e42b7f1eb42350c676
+Assets/WorkshopKit/Content/Configuration/Symbol Triangle.asset.meta:guid: ee2364d9655597744bd040ba1ec92df2
+Assets/WorkshopKit/Content/Configuration/WorkshopCatalog.asset.meta:guid: ec3731d47b30fad4b8a6f803a9f55a49
+Assets/WorkshopKit/Content/Materials.meta:guid: cfe898298eca08443a07e9a88d11dd62
+Assets/WorkshopKit/Content/Materials/Boundary.mat.meta:guid: 1aac63b946738ca47aa83653ca203e53
+Assets/WorkshopKit/Content/Materials/Channel Blue.mat.meta:guid: 91e188f2e470a4c49ba625e19b27d696
+Assets/WorkshopKit/Content/Materials/Channel Green.mat.meta:guid: e7d5fbf6e40aff84c84d0eb9ca2c186f
+Assets/WorkshopKit/Content/Materials/Channel Red.mat.meta:guid: 27d79ac1c8a40cf44913d495d65c3d6c
+Assets/WorkshopKit/Content/Materials/Channel Symbol.mat.meta:guid: 5f43d5c46669b5047b27134f7e11d629
+Assets/WorkshopKit/Content/Materials/Channel Yellow.mat.meta:guid: c755c4f9b8ff4514aa96264c1f556d64
+Assets/WorkshopKit/Content/Materials/Checkpoint Active.mat.meta:guid: b72df5821af018940ac60e0f286642ba
+Assets/WorkshopKit/Content/Materials/Checkpoint Idle.mat.meta:guid: d9e44ade701f4554ba34f136854bcaf0
+Assets/WorkshopKit/Content/Materials/Door Frame.mat.meta:guid: 87aeea22f4b5c864a8f594536f58eb13
+Assets/WorkshopKit/Content/Materials/Floor Dark.mat.meta:guid: 70440761e552d594fa6b4549e063544b
+Assets/WorkshopKit/Content/Materials/Floor Light.mat.meta:guid: addf0ced24bf0fa4e8d54f619c4d31f0
+Assets/WorkshopKit/Content/Materials/Gem.mat.meta:guid: 977eb29fa9ee33348a0546bc2d755aa8
+Assets/WorkshopKit/Content/Materials/Goal Locked.mat.meta:guid: b1578206309310b44a2c8fa57237488a
+Assets/WorkshopKit/Content/Materials/Goal Open.mat.meta:guid: 96478be53eab88945bea271aa4cd412f
+Assets/WorkshopKit/Content/Materials/Hazard Base.mat.meta:guid: 5e7a01f8aa542bc4faf1c35d57540bcc
+Assets/WorkshopKit/Content/Materials/Hazard Spike.mat.meta:guid: 4607826fc0a7a3d44ab351dc159703d0
+Assets/WorkshopKit/Content/Materials/Leaves.mat.meta:guid: b771deaae3e14c54fb47f30d42c93195
+Assets/WorkshopKit/Content/Materials/Player Body.mat.meta:guid: 28112eb330445b44e916742451573ef6
+Assets/WorkshopKit/Content/Materials/Player Visor.mat.meta:guid: b2fd3b6d4c06d62439ee24b3bf4aff2e
+Assets/WorkshopKit/Content/Materials/Start Pad.mat.meta:guid: 0643f836dfaf5044a83a74db70df62c8
+Assets/WorkshopKit/Content/Materials/Stone.mat.meta:guid: ab620b7e069416743a69467824e54ca4
+Assets/WorkshopKit/Content/Materials/Trunk.mat.meta:guid: a7a13e9e9b4a8d54ba79f2088c3248bc
+Assets/WorkshopKit/Content/Materials/Wall.mat.meta:guid: cc4998282cbd98c4b87ea6f2cfa9f4f9
+Assets/WorkshopKit/Content/Materials/Wood.mat.meta:guid: a54e54531613bf942a8e130f93f2404a
+Assets/WorkshopKit/Content/Prefabs.meta:guid: a8c565e9edb5eaa41a7cf7a838e01dbd
+Assets/WorkshopKit/Content/Prefabs/Decoration.meta:guid: 820d635a7e6cd7043949144f06764406
+Assets/WorkshopKit/Content/Prefabs/Decoration/Crate.prefab.meta:guid: cb07849bcded3c84d859a76c254788ef
+Assets/WorkshopKit/Content/Prefabs/Decoration/Rock.prefab.meta:guid: 73b62862ee4dd804793bc7cc2d6c7a8f
+Assets/WorkshopKit/Content/Prefabs/Decoration/Tree.prefab.meta:guid: 0803bf1ba0b520d489533e3a5ad79687
+Assets/WorkshopKit/Content/Prefabs/Environment.meta:guid: 3c0cb8fbfd73bc14ea60f398d0ad9ae4
+Assets/WorkshopKit/Content/Prefabs/Environment/Boundary Wall 4m.prefab.meta:guid: 62f6617bb1ab35b428543249cf5f18f9
+Assets/WorkshopKit/Content/Prefabs/Environment/Floating Platform.prefab.meta:guid: 24c204c12f34dd4419fdfef0b6811c55
+Assets/WorkshopKit/Content/Prefabs/Environment/Floor Tile Dark.prefab.meta:guid: ad62d0596f9a18b4c80bb529cddd437e
+Assets/WorkshopKit/Content/Prefabs/Environment/Floor Tile.prefab.meta:guid: 54108d59d61bbbd4282d31499db67987
+Assets/WorkshopKit/Content/Prefabs/Environment/Low Wall 2m.prefab.meta:guid: 522149982d5e1294c9629b1cdd224885
+Assets/WorkshopKit/Content/Prefabs/Environment/Low Wall 4m.prefab.meta:guid: c3c59d0b70b134f409c27b5fa0a75cc4
+Assets/WorkshopKit/Content/Prefabs/Environment/Raised Platform.prefab.meta:guid: dfbb09dd570e60840968b0e8447d8cbe
+Assets/WorkshopKit/Content/Prefabs/Environment/Tall Wall 2m.prefab.meta:guid: d823b47beef742b44853046023d7d73e
+Assets/WorkshopKit/Content/Prefabs/Environment/Tall Wall 4m.prefab.meta:guid: 8f6870ee7a095b140a7f2be0d487c747
+Assets/WorkshopKit/Content/Prefabs/Gameplay.meta:guid: 676350147ebbe2349aa35b3291cd9fe4
+Assets/WorkshopKit/Content/Prefabs/Gameplay/Checkpoint.prefab.meta:guid: 92467d8f5aea95041a242d13a01150fc
+Assets/WorkshopKit/Content/Prefabs/Gameplay/Door.prefab.meta:guid: 3581276c0660c8c4d8a97748cd9c9adc
+Assets/WorkshopKit/Content/Prefabs/Gameplay/Exit Goal.prefab.meta:guid: a698b3d71870d554a8d3112814687ef9
+Assets/WorkshopKit/Content/Prefabs/Gameplay/Fall Zone.prefab.meta:guid: be3a1c54c5f90e144a5edce301773282
+Assets/WorkshopKit/Content/Prefabs/Gameplay/Gem.prefab.meta:guid: 7680649209bdb1942982c58d3bb1d82a
+Assets/WorkshopKit/Content/Prefabs/Gameplay/Key.prefab.meta:guid: a4ef767fe788f414292bc4ba0d6b3a7d
+Assets/WorkshopKit/Content/Prefabs/Gameplay/Moving Spikes.prefab.meta:guid: 9df3d48ef734b104ead8a553d4e46e9a
+Assets/WorkshopKit/Content/Prefabs/Gameplay/Pressure Switch.prefab.meta:guid: 7530778a8b7c5a64b9a97f7d24601e5c
+Assets/WorkshopKit/Content/Prefabs/Gameplay/Spike Trap.prefab.meta:guid: 94455271060efb441a407f21f9c194a1
+Assets/WorkshopKit/Content/Prefabs/Gameplay/Start Point.prefab.meta:guid: ed937152d7aef7c4eb70549494aff652
+Assets/WorkshopKit/Content/Prefabs/System.meta:guid: 82ab40f534cca184589a017873dddc1a
+Assets/WorkshopKit/Content/Prefabs/System/First-Person Camera.prefab.meta:guid: dbc840de1c09694468e59f9d4e69d7b6
+Assets/WorkshopKit/Content/Prefabs/System/First-Person Player.prefab.meta:guid: 2bf7440f0030e81489d9d70e6854fe8e
+Assets/WorkshopKit/Content/Prefabs/System/Game Setup.prefab.meta:guid: 8a5f035c8dd366c4ba4bbd363e7a6a97
+Assets/WorkshopKit/Content/Prefabs/System/Side-Scroller Camera.prefab.meta:guid: f8797e93758c14f46ac0d3deacbd7a8e
+Assets/WorkshopKit/Content/Prefabs/System/Side-Scroller Player.prefab.meta:guid: 3eea1ac4537452245a25a7a305e4d5a9
+Assets/WorkshopKit/Content/Prefabs/System/Third-Person Camera.prefab.meta:guid: e047f5b5d3093d44ebb1f9b8451d7eef
+Assets/WorkshopKit/Content/Prefabs/System/Third-Person Player.prefab.meta:guid: 594622dffd0535d4680cf77d1cb196a5
+Assets/WorkshopKit/Content/Prefabs/System/Top-Down Camera.prefab.meta:guid: b9919ec1008e0754f94fa5f0bbca0050
+Assets/WorkshopKit/Content/Prefabs/System/Top-Down Player.prefab.meta:guid: 52b988436611fab4a88998cd7b07524d
+Assets/WorkshopKit/Content/Prefabs/System/Workshop HUD.prefab.meta:guid: 34e1c57e0a7755948ac1287e80f2b251
+Assets/WorkshopKit/Content/Templates.meta:guid: 4fae5cdb56cf54f45bde1fbf27e83fce
+Assets/WorkshopKit/Content/Templates/FirstPerson.meta:guid: 91f336b7187a5484bbbbb02bc55a6760
+Assets/WorkshopKit/Content/Templates/FirstPerson/First-Person Preview.png.meta:guid: 64b887df210ae9d4785b88e9f3093a13
+Assets/WorkshopKit/Content/Templates/FirstPerson/First-Person Template.asset.meta:guid: 4d72e619a61d0294083c6ae943e61403
+Assets/WorkshopKit/Content/Templates/FirstPerson/FirstPerson_Starter.unity.meta:guid: 4c83379d3816db840a4143909ce5e21c
+Assets/WorkshopKit/Content/Templates/SideScroller.meta:guid: c1d8b8de0aeaa7343b4569a192f16c9b
+Assets/WorkshopKit/Content/Templates/SideScroller/Side-Scroller Preview.png.meta:guid: a37935d6affe60845a7782dd3e81b442
+Assets/WorkshopKit/Content/Templates/SideScroller/Side-Scroller Template.asset.meta:guid: a2c972cfd1e33a74aaff53550ad58cc3
+Assets/WorkshopKit/Content/Templates/SideScroller/SideScroller_Starter.unity.meta:guid: 7f89d51366d6bc64b9552b932010a23a
+Assets/WorkshopKit/Content/Templates/ThirdPerson.meta:guid: 32b657f60282d9042a7d92559d4289d4
+Assets/WorkshopKit/Content/Templates/ThirdPerson/Third-Person Preview.png.meta:guid: 2468bbb746c3e9c48b70ff613c20b0bc
+Assets/WorkshopKit/Content/Templates/ThirdPerson/Third-Person Template.asset.meta:guid: 36efc4f23c2987149858380a1d386c1c
+Assets/WorkshopKit/Content/Templates/ThirdPerson/ThirdPerson_Starter.unity.meta:guid: 26ad47049c3d410488815b1d86f2e609
+Assets/WorkshopKit/Content/Templates/TopDown.meta:guid: 5395d98491b7ef647a944cb8d5ced685
+Assets/WorkshopKit/Content/Templates/TopDown/Top-Down Preview.png.meta:guid: 446b3b8329f1596479aa30eb7c98606c
+Assets/WorkshopKit/Content/Templates/TopDown/Top-Down Template.asset.meta:guid: 77d98fea1297828428003d57a2ef4293
+Assets/WorkshopKit/Content/Templates/TopDown/TopDown_Starter.unity.meta:guid: d73cda72286cedf42b8408f916150f4d
+Assets/WorkshopKit/Content/UI.meta:guid: e50cb4dcfba6f1444869ca867f3ba91a
+Assets/WorkshopKit/Examples/FirstPerson_Example.unity.meta:guid: cd15a5217ebe8ef4f9cd58a30ced2d62
+Assets/WorkshopKit/Examples/SideScroller_Example.unity.meta:guid: 5a49cbe133f8f924980b2006fea4e94d
+Assets/WorkshopKit/Examples/ThirdPerson_Example.unity.meta:guid: 7d7d90e17db6dd54880118d6f50a7a64
+Assets/WorkshopKit/Examples/TopDown_Example.unity.meta:guid: 3f8b46c4a52fee4469073614d8aeba40
+Assets/WorkshopKit/Recovery/FirstPerson.meta:guid: 80d13cd8dc60a3a4285d47fb18e91cff
+Assets/WorkshopKit/Recovery/FirstPerson/1 Movement Ready.unity.meta:guid: 042fe71da3827ca4ca5545a96fe7fe73
+Assets/WorkshopKit/Recovery/FirstPerson/2 First Winnable.unity.meta:guid: 7638f31280642b843b136af7c7930454
+Assets/WorkshopKit/Recovery/FirstPerson/3 Objective Ready.unity.meta:guid: 532942951174be34fa0b06991f487486
+Assets/WorkshopKit/Recovery/FirstPerson/4 Challenge Ready.unity.meta:guid: 51e910eeb766ae3458e410081b9159f9
+Assets/WorkshopKit/Recovery/SideScroller.meta:guid: 0732a6c881cae294c9b24f810bf5305e
+Assets/WorkshopKit/Recovery/SideScroller/1 Movement Ready.unity.meta:guid: 7225b2c63a0bd5d44bbfd1085f8742bb
+Assets/WorkshopKit/Recovery/SideScroller/2 First Winnable.unity.meta:guid: fc157c00359368640bfd946f0d388a99
+Assets/WorkshopKit/Recovery/SideScroller/3 Objective Ready.unity.meta:guid: 6d4afec853383854f8d60ddd5e45946c
+Assets/WorkshopKit/Recovery/SideScroller/4 Challenge Ready.unity.meta:guid: e4bcb5c4a76a2a049b7d56e8df3024d1
+Assets/WorkshopKit/Recovery/ThirdPerson.meta:guid: 8a8789c90dd51d94b85ed5fc161572dd
+Assets/WorkshopKit/Recovery/ThirdPerson/1 Movement Ready.unity.meta:guid: 36ea122a1a84c6d4fa7bc30f7e08eac1
+Assets/WorkshopKit/Recovery/ThirdPerson/2 First Winnable.unity.meta:guid: 216f01c76908bb9438a3afd3be1e104c
+Assets/WorkshopKit/Recovery/ThirdPerson/3 Objective Ready.unity.meta:guid: a01b21cf6dfd1ec42835b71203845319
+Assets/WorkshopKit/Recovery/ThirdPerson/4 Challenge Ready.unity.meta:guid: 21e6617df8e8e624abad6aaef8f00b6f
+Assets/WorkshopKit/Recovery/TopDown.meta:guid: babdebff663b360459a517feeb115dd2
+Assets/WorkshopKit/Recovery/TopDown/1 Movement Ready.unity.meta:guid: 19ad86cb6f38ce148b2c2613cdc45408
+Assets/WorkshopKit/Recovery/TopDown/2 First Winnable.unity.meta:guid: a0c77d5f1faae8246890ccec8ff134ac
+Assets/WorkshopKit/Recovery/TopDown/3 Objective Ready.unity.meta:guid: 7820e08fdcc23554f96633f7c6d4319f
+Assets/WorkshopKit/Recovery/TopDown/4 Challenge Ready.unity.meta:guid: 3e074fd2960d19948bdf376fd65234c8

@@ -15,8 +15,8 @@ Legend: **Auto** = executed automated check · **Manual** = needs a person · **
 | 3 First-person | Done (automated gate passed; manual feel and Editor checks outstanding) | `Reports/Phase3-Report.md` |
 | 4 Third-person | Done (automated gate passed; feel, slope and Editor checks outstanding) | `Reports/Phase4-Report.md` |
 | 5 Side-scroller | Done (automated gate passed; course feel and Editor checks outstanding) | `Reports/Phase5-Report.md` |
-| 6 Builder completion and asset adoption | **In progress**: code complete, 8 of 78 EditMode tests failing; see `Reports/Phase6-InProgress/RESUME.md` | – |
-| 7 Hardening and classroom delivery | Pending | – |
+| 6 Builder completion and asset adoption | Done (automated gate passed; Humanoid adoption blocked on a real asset; Editor walkthrough outstanding) | `Reports/Phase6-Report.md` |
+| 7 Hardening and classroom delivery | Next | – |
 
 ## Acceptance matrix
 
@@ -32,18 +32,18 @@ Mechanics are verified in all four templates: Top-Down, First-Person, Third-Pers
 | A06 | Ten restart cycles restore everything | **Auto** pass, 10 cycles each in all four templates (moving hazard reset tested separately) | `GameplayTests.RestartRestoresEverythingTenTimes`, `MechanicsTests.MovingHazardMovesFreezesAndResetsOnRestart` |
 | A07 | Repeated Play with domain reload disabled | **Auto** pass | `PlaySessionTests.RepeatedPlaySessionsStartClean` |
 | A08 | Save/reopen, Undo/Redo, multi-select, handles | **Auto** partial: scene persistence, and channel change plus Undo via API. **Manual** outstanding: handles, inspectors and multi-select in the real Editor UI | `AuthoringTests.ChannelChangeUpdatesLookAndIsUndoable`, `SharedPresetsAreNotTeamSettings` |
-| A09 | Repeatable setup, safe fixes and cleanup | **Auto** pass for generator idempotency (79 GUIDs identical) and fix idempotency (fall height, missing systems) | `Reports/Phase2/guids-*.txt`, `AuthoringTests.StartBelowFallHeightIsAnErrorWithFix` |
+| A09 | Repeatable setup, safe fixes and cleanup | **Auto** pass for generator idempotency (79 GUIDs identical) and fix idempotency (fall height, missing systems) and Phase 6: rig restore, milestone copy, failed-adoption cleanup (124 GUIDs stable; local object IDs churn on regeneration) | `Reports/Phase2/guids-*.txt`, `AuthoringTests.StartBelowFallHeightIsAnErrorWithFix` |
 | A10 | Two contexts in separate scenes do not cross-connect | **Auto** pass | `MechanicsTests.TwoGamesInSeparateScenesDoNotCrossConnect`; preflight warns on multi-scene editing and only fixes the checked scene |
-| A11 | Asset adoption | **Pending** (Phase 6). Groundwork: `PlayerVisualAdapter` and competing-motion preflight are tested | `ThirdPersonTests.AnimationAdapterDrivesOnlyTheParametersThatExist`, `ThirdPersonAuthoringTests.CompetingMotionInAModelIsReported` |
+| A11 | Asset adoption | **Auto** pass for static prop, incompatible asset, Generic-rig player look, vendor-file preservation, repeat and failure cleanup. **Blocked**: Humanoid animated character (no Humanoid asset in the project) | `AdoptionTests.*` (stand-in vendor assets) |
 | A12 | Build and launch on the workshop OS | **Auto** partial: Windows x64 build launched; synthesized keys collected a gem, the countdown ran and paused, and doors, switch and checkpoints rendered. Win/loss screens and mouse clicks are **Manual**. First-person, third-person and side-scroller builds: real mouse look/orbit, keyboard movement (including arrow keys), jump and cursor behaviour recorded | `Reports/Phase2/screenshots`, `Reports/Phase3/`, `Reports/Phase4/`, `Reports/Phase5/` |
 | A13 | 60 FPS at 1080p on the weakest lab machine | **Blocked**: lab hardware unknown | – |
 | A14 | Offline after install | **Auto** pass by construction (no network APIs or downloads); not tested disconnected | – |
 | A15 | Novice rehearsal | **Manual** (Phase 7) | – |
 | A16 | Classroom package contents | **Pending** (Phase 7); developer content is isolated in `Assets/WorkshopKitDeveloper` | – |
 
-## Known follow-ups carried into Phase 6
+## Known follow-ups carried into Phase 7
 
-- Builder: template replacement with preview, restore system rig, recovery milestone scenes, scene overlay, richer catalog previews. Builder drag-and-drop does not snap to the side-scroller plane (Check reports it).
-- Asset adoption (A11): wrappers under AdoptedAssets, material copies, Humanoid mapping through `PlayerVisualAdapter`, and checks that vendor sources are unchanged.
-- A ramp/slope piece, then a slope camera test (third-person gate note).
-- Manual Editor pass over all inspectors and handles (Phases 1–5), and feel checks on lab hardware.
+- Make regeneration byte-stable (update prefabs in place) to avoid large git diffs; GUIDs are already stable.
+- Decide whether `DeveloperVerification/Builds` belongs in git (recommend `.gitignore`).
+- Humanoid adoption with a real asset; a ramp/slope piece and slope camera test.
+- Manual Editor pass over all inspectors, handles and Builder flows (Phases 1–6); feel checks and profiling on lab hardware.
